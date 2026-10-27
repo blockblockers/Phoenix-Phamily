@@ -1,0 +1,47 @@
+{
+  "slug": "friends-league",
+  "league_name": "Stone Christ",
+  "espn_league_id": 41607,
+  "season": 2026,
+  "enabled": true,
+  "scoring": {
+    "top_half_bonus_win": false
+  },
+  "recap": {
+    "target_words": 1200,
+    "tone": "Colorful ESPN sportswriter with maximum-intensity, ruthless, irreverent, raunchy adult college-friends trash talk. Build personalized, inventive jokes around the exact current fantasy team names, their meanings, verified owner identities, weekly collapses, bench mistakes, historical grudges, and receipts. Be merciless about fantasy incompetence, overconfidence, embarrassing predictions, and rivalries; use edgy adult humor and occasional profanity where it improves the punchline, without substituting profanity for creativity. Maintain recurring team-specific comedic identities throughout matchups, awards, rankings, standings commentary, and closing. Make losing teams feel roasted and winning teams insufferably smug. Never fabricate past quotes, college stories, personal secrets, or scandals. Do not make claims about real misconduct or target protected traits. Use verified owner first names only, never ESPN handles.",
+    "league_context": "Longtime male college friends with established grudges and competitive banter. The harshest of the leagues: nasty, funny, team-name-specific burns, humiliating statistical receipts, and callbacks to documented historical matchups.",
+    "team_personalities": {
+      "The Good Goys": "Self-congratulatory supposed nice guys who turn into smug villains after wins; mock sanctimony, performative virtue, and losing the moral high ground. Do not make jokes about ethnicity or religion, clown baby, stoney, lansing, bitter about losing during his perfect season to the Scottsdale Sluts years ago.",
+      "MR. F": "Mysterious single-letter villain, ominous report cards, failing grades, secret identities, and the F standing for failure after losses. Mock the fantasy persona, not private identity. Boeing plane wing engineer, feminine, golfer, katie perry fan",
+      "Scottsdale Sluts": "Scottsdale nightlife, bottle service, overpriced cocktails, VIP tables, desperate attention, and a roster flirting with disaster. Raunchy self-deprecating fantasy banter without claims about real sex lives. Now lives in chandler / suburbia, settling down",
+      "Griddy Committee": "An absurdly bureaucratic committee regulating touchdown dances, failed motions, emergency Griddy hearings, and no one actually scoring enough to dance. Relentlessly mock premature celebrations. Mortgage officer. Used to ride on 20 inch rims, now carries diaper bags ",
+      "THRICE": "Everything happens three times: three chances blown, triple embarrassment, repeated failures, three-peat aspirations, and the absurdity of doing the same dumb thing thrice. bragged about buying a racehorse but didn't have the guts, big baller, marijuana dispensary owner with Auto Draft",
+      "Keating Football Club": "Pretentious European football-club branding, transfer windows, relegation, supporter revolts, and a manager pretending fantasy football is the Champions League. Roast losses as relegation scraps. city council member, wannabe mayor, diabetic",
+      "Auto draft": "A team allegedly managed by a robot, algorithmic incompetence, autopilot, bots outperforming humans, and embarrassing victories by a supposedly hands-off roster. Never assume they actually autodrafted. Marijuana Dispensary owner with Thrice, used to crush beers but now needs to crush kidney stones, wannabe pro golfer",
+      "Never gonna gibbs you up": "Rickroll-style never-give-up bravado, Jahmyr Gibbs wordplay, false promises, ghosting wins, and getting rolled by opponents. Allude to the meme without reproducing lyrics. tall red head, likes to throw darts",
+      "Big Tex": "Texas-sized ego, cowboy hats, cattle, rodeos, barbecue, giant claims and tiny results. Winning is a stampede; losing is getting bucked off the mechanical bull. sells IT services and devices, rides bicycle, wannabe-texas as he moved back to Arizona",
+      "BT Zeus": "Thunderbolts, Mount Olympus, god-complex, lightning strikes, divine tantrums, and being demoted from Greek god to malfunctioning weather app after a loss. Likes to eat burritos on the toilet, super dirty, deathly afraid of lettuce, engineers light fixtures, former soccerplayer",
+      "Ron's Team": "The spectacular lack of creative effort in naming the team, generic-brand packaging, placeholder labels, and Ron acting as if naming rights are beneath him. Roast blandness whenever performance is bland. Ron is basically O'doyle from the Adam Sandler movies - Ron Rules!",
+      "BBBBenny and the JJettas": "Benny and the Jets-style stage show, exaggerated B and J letters, Justin Jefferson puns, stadium lights, rock-star swagger, and getting booed offstage when the offense fails. Do not reproduce song lyrics. Buys and sells cars. Into the "scene""
+    },
+    "writing_guidelines": [
+      "Use bold current ESPN fantasy team names, never ESPN usernames or login handles.",
+      "Write a lively opening, every head-to-head matchup, weekly awards, season standings commentary, editorial power rankings, and a memorable closing.",
+      "Make team-name wordplay recur in every section; tailor each roast to actual scores, players, and outcomes rather than generic insults.",
+      "Explain head-to-head outcomes accurately; do not award a top-half bonus when this league has it disabled.",
+      "Use sourced NFL game logs and verified historical league records for concrete claims; do not invent statistics, quotes, injuries, or rivalries.",
+      "Prefer novel, evolving jokes; avoid repeating the same insult in multiple sections.",
+      "Once current ESPN team names are collected, add each exact name as a key in team_personalities with its distinct comedic theme."
+    ],
+    "guidelines": [
+      "Use the exact current ESPN team names in bold throughout the recap, including awards, standings commentary, power rankings, and final whistle.",
+      "Build original jokes from each team personality; never repeat the same metaphor more than once per recap.",
+      "Use verified archive evidence for dated historical callbacks, rivalries, renamed teams, and records; never invent quotes, champions, or incidents.",
+      "This league does not award top-half bonus wins. Do not imply a second weekly win.",
+      "Verify all scores, winners, player stats, and owner names against the weekly report before writing."
+    ]
+  },
+  "archive_start_year": 2007,
+  "team_name_aliases": {}
+}

@@ -1,0 +1,432 @@
+{
+  "franchises": {
+    "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974": {
+      "label": "Auto-Draft Drunks",
+      "owner_id": "{006ba0c2-8b08-4533-80d5-67a82753a974}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d": {
+      "label": "THRICE",
+      "owner_id": "{1b982dc7-d7cb-453f-8d8a-91445ca5499d}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-1d0714cd-98d9-4599-8641-14897f2829e5": {
+      "label": "Monster Cooks",
+      "owner_id": "{1d0714cd-98d9-4599-8641-14897f2829e5}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d": {
+      "label": "The Good Goys",
+      "owner_id": "{23aa39ce-f305-4ae9-a410-7ae5a60abc7d}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-43ebda61-e823-4521-94af-7030fad4f092": {
+      "label": "Team Culpepper",
+      "owner_id": "{43ebda61-e823-4521-94af-7030fad4f092}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-498e5462-df15-4a69-bfb4-6e2397495e77": {
+      "label": "Team Barlow",
+      "owner_id": "{498e5462-df15-4a69-bfb4-6e2397495e77}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-4c7ddc15-799a-4bbe-a472-09138aa6ca9a": {
+      "label": "Team Natch",
+      "owner_id": "{4c7ddc15-799a-4bbe-a472-09138aa6ca9a}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-50e0241d-715e-4879-a024-1d715e18798a": {
+      "label": "- Breece's Pieces",
+      "owner_id": "{50e0241d-715e-4879-a024-1d715e18798a}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-5bda701f-c4a9-422f-ae69-14f56354cf0e": {
+      "label": "Ron's Team",
+      "owner_id": "{5bda701f-c4a9-422f-ae69-14f56354cf0e}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-612172d9-c2fb-48ce-badb-650e910385e1": {
+      "label": "Team Hentz",
+      "owner_id": "{612172d9-c2fb-48ce-badb-650e910385e1}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-6c24534c-04d3-4cfe-9ccc-569070f02722": {
+      "label": "Team King",
+      "owner_id": "{6c24534c-04d3-4cfe-9ccc-569070f02722}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-7a8e5d37-0035-4cef-8d2a-903a133a1d6e": {
+      "label": "Superbowl bound Seahawks",
+      "owner_id": "{7a8e5d37-0035-4cef-8d2a-903a133a1d6e}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c": {
+      "label": "MR. F",
+      "owner_id": "{82cfa496-30af-4bf0-8829-aae1a833e15c}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564": {
+      "label": "Auto draft",
+      "owner_id": "{89cbcb1c-6329-45ed-8977-cc2adf291564}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7": {
+      "label": "BBBBenny and the JJettas",
+      "owner_id": "{93b47756-37ef-4b64-93bd-1ecdfa8d20d7}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d": {
+      "label": "Chubby Chasers",
+      "owner_id": "{96a68986-2d7f-4209-9be0-bfd2a81c141d}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e": {
+      "label": "Never gonna gibbs you up",
+      "owner_id": "{96ac0e52-c236-4e7d-95b4-2004cc7d224e}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-9d12a81e-8a16-4d72-960b-9e53db6ad476": {
+      "label": "some ware over Dwayne bow",
+      "owner_id": "{9d12a81e-8a16-4d72-960b-9e53db6ad476}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235": {
+      "label": "BT Zeus",
+      "owner_id": "{a9cdb7b4-ba36-47d2-bdc7-641b0ff14235}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e": {
+      "label": "Scottsdale Sluts",
+      "owner_id": "{b5d032b7-2a00-473c-8ce8-b88b9a078e0e}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-c434a51b-bc69-4f7a-b667-510ec7f3d5a7": {
+      "label": "Team McClap",
+      "owner_id": "{c434a51b-bc69-4f7a-b667-510ec7f3d5a7}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-c45e55b6-d5dd-484e-ba4e-cf8c93776ab6": {
+      "label": "Team FOZZ",
+      "owner_id": "{c45e55b6-d5dd-484e-ba4e-cf8c93776ab6}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d": {
+      "label": "Keating Football Club",
+      "owner_id": "{cca2f622-39bd-44ad-b7fb-6a6e795e2b4d}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-d43394d2-f489-4d02-8d4b-48795172189c": {
+      "label": "Gunther and The Sunshine Girls",
+      "owner_id": "{d43394d2-f489-4d02-8d4b-48795172189c}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-dbddb794-85d0-4e51-a5d7-205896cb4df8": {
+      "label": "Team wong",
+      "owner_id": "{dbddb794-85d0-4e51-a5d7-205896cb4df8}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-eecbbaf7-7b57-4e87-9599-271f909f2fb9": {
+      "label": "Free Win",
+      "owner_id": "{eecbbaf7-7b57-4e87-9599-271f909f2fb9}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752": {
+      "label": "Griddy Committee",
+      "owner_id": "{f1bc7027-6391-4fec-a1c5-de919bcd8752}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-f4176729-7157-4145-b431-034684f91803": {
+      "label": "Urine Trouble",
+      "owner_id": "{f4176729-7157-4145-b431-034684f91803}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43": {
+      "label": "Big Tex",
+      "owner_id": "{fe6a2ab0-71ce-4416-96a6-ba3b896a3b43}",
+      "source": "ESPN stable owner ID"
+    }
+  },
+  "seasons": {
+    "2007": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "12": "espn-owner-43ebda61-e823-4521-94af-7030fad4f092",
+      "9": "espn-owner-4c7ddc15-799a-4bbe-a472-09138aa6ca9a",
+      "14": "espn-owner-612172d9-c2fb-48ce-badb-650e910385e1",
+      "10": "espn-owner-7a8e5d37-0035-4cef-8d2a-903a133a1d6e",
+      "4": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "3": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "5": "espn-owner-9d12a81e-8a16-4d72-960b-9e53db6ad476",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "11": "espn-owner-c434a51b-bc69-4f7a-b667-510ec7f3d5a7",
+      "2": "espn-owner-c45e55b6-d5dd-484e-ba4e-cf8c93776ab6",
+      "13": "espn-owner-dbddb794-85d0-4e51-a5d7-205896cb4df8",
+      "7": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2008": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "20": "espn-owner-6c24534c-04d3-4cfe-9ccc-569070f02722",
+      "3": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "16": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "5": "espn-owner-9d12a81e-8a16-4d72-960b-9e53db6ad476",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "11": "espn-owner-c434a51b-bc69-4f7a-b667-510ec7f3d5a7",
+      "2": "espn-owner-c45e55b6-d5dd-484e-ba4e-cf8c93776ab6",
+      "17": "espn-owner-eecbbaf7-7b57-4e87-9599-271f909f2fb9",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803"
+    },
+    "2009": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "20": "espn-owner-6c24534c-04d3-4cfe-9ccc-569070f02722",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "5": "espn-owner-9d12a81e-8a16-4d72-960b-9e53db6ad476",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "2": "espn-owner-c45e55b6-d5dd-484e-ba4e-cf8c93776ab6",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "17": "espn-owner-eecbbaf7-7b57-4e87-9599-271f909f2fb9",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803"
+    },
+    "2010": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "24": "espn-owner-498e5462-df15-4a69-bfb4-6e2397495e77",
+      "20": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "5": "espn-owner-9d12a81e-8a16-4d72-960b-9e53db6ad476",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2011": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "24": "espn-owner-498e5462-df15-4a69-bfb4-6e2397495e77",
+      "20": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "5": "espn-owner-d43394d2-f489-4d02-8d4b-48795172189c",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2012": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "20": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "5": "espn-owner-d43394d2-f489-4d02-8d4b-48795172189c",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2013": {
+      "8": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-5bda701f-c4a9-422f-ae69-14f56354cf0e",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2014": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2015": {
+      "20": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2016": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2017": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2018": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2019": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "24": "espn-owner-96a68986-2d7f-4209-9be0-bfd2a81c141d",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2020": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "24": "espn-owner-1d0714cd-98d9-4599-8641-14897f2829e5",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "26": "espn-owner-50e0241d-715e-4879-a024-1d715e18798a",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "25": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "18": "espn-owner-f4176729-7157-4145-b431-034684f91803",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2021": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "24": "espn-owner-1d0714cd-98d9-4599-8641-14897f2829e5",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "26": "espn-owner-50e0241d-715e-4879-a024-1d715e18798a",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2022": {
+      "28": "espn-owner-006ba0c2-8b08-4533-80d5-67a82753a974",
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "24": "espn-owner-1d0714cd-98d9-4599-8641-14897f2829e5",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "26": "espn-owner-50e0241d-715e-4879-a024-1d715e18798a",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "8": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "27": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "17": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2023": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "27": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "24": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2024": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "28": "espn-owner-5bda701f-c4a9-422f-ae69-14f56354cf0e",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "29": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "27": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "24": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2025": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "28": "espn-owner-5bda701f-c4a9-422f-ae69-14f56354cf0e",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "29": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "27": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "24": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    },
+    "2026": {
+      "20": "espn-owner-1b982dc7-d7cb-453f-8d8a-91445ca5499d",
+      "1": "espn-owner-23aa39ce-f305-4ae9-a410-7ae5a60abc7d",
+      "28": "espn-owner-5bda701f-c4a9-422f-ae69-14f56354cf0e",
+      "5": "espn-owner-82cfa496-30af-4bf0-8829-aae1a833e15c",
+      "22": "espn-owner-89cbcb1c-6329-45ed-8977-cc2adf291564",
+      "29": "espn-owner-93b47756-37ef-4b64-93bd-1ecdfa8d20d7",
+      "23": "espn-owner-96ac0e52-c236-4e7d-95b4-2004cc7d224e",
+      "27": "espn-owner-a9cdb7b4-ba36-47d2-bdc7-641b0ff14235",
+      "6": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "21": "espn-owner-cca2f622-39bd-44ad-b7fb-6a6e795e2b4d",
+      "19": "espn-owner-f1bc7027-6391-4fec-a1c5-de919bcd8752",
+      "24": "espn-owner-fe6a2ab0-71ce-4416-96a6-ba3b896a3b43"
+    }
+  }
+}

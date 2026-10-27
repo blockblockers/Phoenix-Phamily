@@ -24,5 +24,10 @@
       "Risky Business": "Investments, bankruptcy, risky decisions, airport construction, tall, former athlete, beer drinker",
       "Ceedee's TD's": "Touchdowns and CeeDee puns, recent mom, saleswoman"
     }
-  }
+  },
+  "team_name_aliases": {
+    "TD  Law  firm Jackson, McConkey": "TD Law Firm Jackson, McConkey",
+    "TD Law Firm": "TD Law Firm Jackson, McConkey"
+  },
+  "archive_start_year": 2013
 }

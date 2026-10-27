@@ -1,0 +1,49 @@
+{
+  "slug": "work-league",
+  "league_name": "PRO 2026 Fantasy",
+  "espn_league_id": 1083280082,
+  "season": 2026,
+  "enabled": true,
+  "scoring": {
+    "top_half_bonus_win": false
+  },
+  "recap": {
+    "target_words": 1200,
+    "tone": "Colorful ESPN sportswriter with sharp, aggressive workplace trash talk. The owners are male coworkers in internal audit, technology consulting, and business process improvement. Use each real fantasy team name as the primary source of recurring jokes, and weave its theme into every matchup, awards, power rankings, standings commentary, and closing. Roast failed controls, audit findings, remediation plans, scope creep, broken dashboards, poor requirements, change requests, botched implementations, stakeholder escalations, utilization targets, steering committees, process maps, root-cause analyses, and performance reviews. Make jokes fit the actual game result and the specific team name; vary metaphors and avoid generic repeated punchlines. Use genuine owner first names only when verified; never treat ESPN usernames as names. Historical references must come from verified league archive records. Be cutting and funny without inventing real workplace misconduct, confidential client details, or personal accusations.",
+    "league_context": "Competitive coworkers who know internal audit, technology consulting, and business process improvement. A bad lineup is a control failure; a crushing loss is a failed implementation. Treat the weekly results like a disastrous audit committee meeting, with individualized team-name wordplay.",
+    "team_personalities": {
+      "Naber-Hood Warrents": "Audit warrants, neighborhood raids, and Malik Nabers wordplay. Treat every defeat as a failed search warrant, insufficient evidence, or auditors knocking on the wrong door. Roast weak coverage and excessive points allowed.",
+      "The General": "Self-appointed military commander, battlefield plans, chain of command, and losing the war despite polished PowerPoint briefings. Wins are campaigns; losses are disastrous orders and retreats.",
+      "Hydration Nation": "Hydration evangelists, water coolers, electrolytes, dehydration, and drowning in opposing points. Tie victories to flowing water and losses to dry wells and failed wellness initiatives.",
+      "Evil Empire ('15, '17, '19)": "Self-declared dynasty, villainous boardroom empire, dark-side management, old championship banners dated 2015/2017/2019 as team-name claims, not independently verified titles. Every loss is a rebellion and hostile takeover.",
+      "Purdy Good Auditors": "Brock Purdy pun plus audit professionals: clean opinions, material weaknesses, sampling errors, fraud-risk red flags, workpapers, and findings. Winning is a clean audit; losing is a qualified opinion or control deficiency.",
+      "The Griddy Committee": "Corporate committee paralysis meets touchdown Griddy dances; endless meetings, minutes, approvals, governance charters, and dancing before a win is secured. Missed plays are tabled motions.",
+      "The Freds": "A committee of interchangeable Freds, generic employee badges, nobody knowing who is accountable, and an entire department named Fred. Make anonymity and groupthink the recurring punchline.",
+      "Big TD's": "Oversized touchdown ambitions, KPI dashboards, inflated metrics, and enormous expectations versus tiny actual production. Play on TDs as touchdowns; joke about size only in fantasy-performance terms.",
+      "Sensual Chocolate": "Smooth chocolate marketing, decadent dessert, melting under pressure, bitter aftertaste, and premium packaging hiding terrible fundamentals. Office-appropriate innuendo without personal claims.",
+      "Nebraska Snowplowers": "Cornhusker winters, plows, blizzards, salted roads, snowed-in deadlines, and two-manager plow crew. Winning clears the road; losses strand the team in a drift.",
+      "Jeanty in a Bottle": "Ashton Jeanty pun meets genie-in-a-bottle wishes, three wishes, broken magic lamps, fantasy miracles and disappointing wish fulfillment. Never claim real magic or quote song lyrics.",
+      "Dirty Mike and the Boys": "Chaotic project crew, messy audit trails, unapproved change requests, dirty data, missing documentation, and a break-room cleanup nobody volunteers for. Riff on the name with rough workplace humor.",
+      "Trevor's Tenacious Team": "Overly earnest alliteration, motivational seminars, persistence without results, relentless follow-up emails, and never-ending remediation trackers. Wins reward tenacity; losses expose empty slogans.",
+      "Dumpster Fire": "Flaming trash bins, emergency incident response, catastrophic implementations, failed controls, smoke alarms, and disaster recovery plans. Any upset is a fire unexpectedly becoming useful energy."
+    },
+    "writing_guidelines": [
+      "Use bold current ESPN fantasy team names, never ESPN usernames or login handles.",
+      "Write a lively opening, every head-to-head matchup, weekly awards, season standings commentary, editorial power rankings, and a memorable closing.",
+      "Make team-name wordplay recur in every section; tailor each roast to actual scores, players, and outcomes rather than generic insults.",
+      "Explain head-to-head outcomes accurately; do not award a top-half bonus when this league has it disabled.",
+      "Use sourced NFL game logs and verified historical league records for concrete claims; do not invent statistics, quotes, injuries, or rivalries.",
+      "Prefer novel, evolving jokes; avoid repeating the same insult in multiple sections.",
+      "Once current ESPN team names are collected, add each exact name as a key in team_personalities with its distinct comedic theme."
+    ],
+    "guidelines": [
+      "Use the exact current ESPN team names in bold throughout the recap, including awards, standings commentary, power rankings, and final whistle.",
+      "Build original jokes from each team personality; never repeat the same metaphor more than once per recap.",
+      "Use verified archive evidence for dated historical callbacks, rivalries, renamed teams, and records; never invent quotes, champions, or incidents.",
+      "This league does not award top-half bonus wins. Do not imply a second weekly win.",
+      "Verify all scores, winners, player stats, and owner names against the weekly report before writing."
+    ]
+  },
+  "archive_start_year": 2023,
+  "team_name_aliases": {}
+}

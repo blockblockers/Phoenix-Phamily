@@ -1,0 +1,50 @@
+{
+  "unresolved": [],
+  "multiple_owners": [
+    {
+      "year": "2023",
+      "team_id": 10,
+      "name": "Nebraska Snowplowers",
+      "owner_ids": [
+        "{9e3a7998-6edb-4ea7-bf34-e842ec79cbdd}",
+        "{c079934b-3f21-4c59-81d0-beeaeae59d82}"
+      ]
+    },
+    {
+      "year": "2024",
+      "team_id": 10,
+      "name": "Nebraska Snowplowers",
+      "owner_ids": [
+        "{9e3a7998-6edb-4ea7-bf34-e842ec79cbdd}",
+        "{c079934b-3f21-4c59-81d0-beeaeae59d82}"
+      ]
+    },
+    {
+      "year": "2025",
+      "team_id": 10,
+      "name": "Nebraska Snowplowers",
+      "owner_ids": [
+        "{9e3a7998-6edb-4ea7-bf34-e842ec79cbdd}",
+        "{c079934b-3f21-4c59-81d0-beeaeae59d82}"
+      ]
+    },
+    {
+      "year": "2026",
+      "team_id": 10,
+      "name": "Nebraska Snowplowers",
+      "owner_ids": [
+        "{9e3a7998-6edb-4ea7-bf34-e842ec79cbdd}",
+        "{c079934b-3f21-4c59-81d0-beeaeae59d82}"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "summary": {
+    "season_team_entries": 56,
+    "mapped_entries": 52,
+    "franchises": 19,
+    "unresolved": 0,
+    "multiple_owner_entries": 4,
+    "conflicts": 0
+  }
+}

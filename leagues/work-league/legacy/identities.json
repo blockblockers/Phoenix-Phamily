@@ -1,0 +1,161 @@
+{
+  "franchises": {
+    "espn-owner-1435223b-d7c0-4815-9d97-bdf25f4ecaf1": {
+      "label": "Sydney Sweeney's Jeanty's",
+      "owner_id": "{1435223b-d7c0-4815-9d97-bdf25f4ecaf1}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-2db19f63-5142-4c59-b8f1-efa6b94dffc5": {
+      "label": "Trevor's Tenacious Team",
+      "owner_id": "{2db19f63-5142-4c59-b8f1-efa6b94dffc5}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-3b7b82eb-6abd-4b1b-94c6-14735d347324": {
+      "label": "Purdy Good Auditors",
+      "owner_id": "{3b7b82eb-6abd-4b1b-94c6-14735d347324}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-5ed815e3-641e-4a27-9815-e3641e7a2712": {
+      "label": "The General",
+      "owner_id": "{5ed815e3-641e-4a27-9815-e3641e7a2712}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-799dfaf6-830c-4ebf-9dfa-f6830cfebf20": {
+      "label": "Dirty Mike and the Boys",
+      "owner_id": "{799dfaf6-830c-4ebf-9dfa-f6830cfebf20}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-7d139ae0-2931-4ae8-b62d-322f30ab9977": {
+      "label": "Naber-Hood Warrents",
+      "owner_id": "{7d139ae0-2931-4ae8-b62d-322f30ab9977}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-7ec00747-7b7d-4f20-a898-265a9237a760": {
+      "label": "The Freds",
+      "owner_id": "{7ec00747-7b7d-4f20-a898-265a9237a760}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-88d65a16-3a49-4ee9-89cc-53a6ca08f93d": {
+      "label": "Sensual Chocolate ",
+      "owner_id": "{88d65a16-3a49-4ee9-89cc-53a6ca08f93d}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-8cd31793-6dd6-40b4-9317-936dd640b452": {
+      "label": "The Griddy Committee",
+      "owner_id": "{8cd31793-6dd6-40b4-9317-936dd640b452}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-affbc88a-5398-4db8-bbc8-8a53981db890": {
+      "label": "Jeanty in a Bottle",
+      "owner_id": "{affbc88a-5398-4db8-bbc8-8a53981db890}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e": {
+      "label": "Evil Empire ('15, '17, '19)",
+      "owner_id": "{b5d032b7-2a00-473c-8ce8-b88b9a078e0e}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-bdebeecd-ff85-4f6a-abee-cdff850f6a1b": {
+      "label": "Team Eichele",
+      "owner_id": "{bdebeecd-ff85-4f6a-abee-cdff850f6a1b}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-c84d8d43-e5fe-4b97-8da5-ee5a71be77db": {
+      "label": "The Great Bigsby",
+      "owner_id": "{c84d8d43-e5fe-4b97-8da5-ee5a71be77db}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-d30766c2-73a1-4865-9edc-5309d33778db": {
+      "label": "Hydration Nation",
+      "owner_id": "{d30766c2-73a1-4865-9edc-5309d33778db}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-dd7a47c8-d6f5-4249-bf5e-272dd346205b": {
+      "label": "Team Crippler",
+      "owner_id": "{dd7a47c8-d6f5-4249-bf5e-272dd346205b}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-e1f2e67e-cdb9-498c-a6b1-11017a3f827f": {
+      "label": "Tua be or not tua be",
+      "owner_id": "{e1f2e67e-cdb9-498c-a6b1-11017a3f827f}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-e2f4cc41-9234-4bea-9aa7-3c1956302f27": {
+      "label": "Big TD's",
+      "owner_id": "{e2f4cc41-9234-4bea-9aa7-3c1956302f27}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-e489bcd9-5dd3-4487-b9bc-9cbbc93962d1": {
+      "label": "Christian McCALF-fry",
+      "owner_id": "{e489bcd9-5dd3-4487-b9bc-9cbbc93962d1}",
+      "source": "ESPN stable owner ID"
+    },
+    "espn-owner-f6d9c6d7-b364-4ff6-b6f7-34be83c34ea8": {
+      "label": "Dumpster Fire",
+      "owner_id": "{f6d9c6d7-b364-4ff6-b6f7-34be83c34ea8}",
+      "source": "ESPN stable owner ID"
+    }
+  },
+  "seasons": {
+    "2023": {
+      "7": "espn-owner-1435223b-d7c0-4815-9d97-bdf25f4ecaf1",
+      "2": "espn-owner-5ed815e3-641e-4a27-9815-e3641e7a2712",
+      "1": "espn-owner-7d139ae0-2931-4ae8-b62d-322f30ab9977",
+      "9": "espn-owner-88d65a16-3a49-4ee9-89cc-53a6ca08f93d",
+      "11": "espn-owner-affbc88a-5398-4db8-bbc8-8a53981db890",
+      "4": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "12": "espn-owner-bdebeecd-ff85-4f6a-abee-cdff850f6a1b",
+      "6": "espn-owner-c84d8d43-e5fe-4b97-8da5-ee5a71be77db",
+      "3": "espn-owner-d30766c2-73a1-4865-9edc-5309d33778db",
+      "8": "espn-owner-dd7a47c8-d6f5-4249-bf5e-272dd346205b",
+      "5": "espn-owner-e1f2e67e-cdb9-498c-a6b1-11017a3f827f",
+      "13": "espn-owner-e489bcd9-5dd3-4487-b9bc-9cbbc93962d1",
+      "14": "espn-owner-f6d9c6d7-b364-4ff6-b6f7-34be83c34ea8"
+    },
+    "2024": {
+      "7": "espn-owner-1435223b-d7c0-4815-9d97-bdf25f4ecaf1",
+      "2": "espn-owner-5ed815e3-641e-4a27-9815-e3641e7a2712",
+      "1": "espn-owner-7d139ae0-2931-4ae8-b62d-322f30ab9977",
+      "9": "espn-owner-88d65a16-3a49-4ee9-89cc-53a6ca08f93d",
+      "11": "espn-owner-affbc88a-5398-4db8-bbc8-8a53981db890",
+      "4": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "12": "espn-owner-bdebeecd-ff85-4f6a-abee-cdff850f6a1b",
+      "6": "espn-owner-c84d8d43-e5fe-4b97-8da5-ee5a71be77db",
+      "3": "espn-owner-d30766c2-73a1-4865-9edc-5309d33778db",
+      "5": "espn-owner-e1f2e67e-cdb9-498c-a6b1-11017a3f827f",
+      "8": "espn-owner-e2f4cc41-9234-4bea-9aa7-3c1956302f27",
+      "13": "espn-owner-e489bcd9-5dd3-4487-b9bc-9cbbc93962d1",
+      "14": "espn-owner-f6d9c6d7-b364-4ff6-b6f7-34be83c34ea8"
+    },
+    "2025": {
+      "7": "espn-owner-1435223b-d7c0-4815-9d97-bdf25f4ecaf1",
+      "2": "espn-owner-5ed815e3-641e-4a27-9815-e3641e7a2712",
+      "12": "espn-owner-799dfaf6-830c-4ebf-9dfa-f6830cfebf20",
+      "1": "espn-owner-7d139ae0-2931-4ae8-b62d-322f30ab9977",
+      "9": "espn-owner-88d65a16-3a49-4ee9-89cc-53a6ca08f93d",
+      "6": "espn-owner-8cd31793-6dd6-40b4-9317-936dd640b452",
+      "11": "espn-owner-affbc88a-5398-4db8-bbc8-8a53981db890",
+      "4": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "3": "espn-owner-d30766c2-73a1-4865-9edc-5309d33778db",
+      "5": "espn-owner-e1f2e67e-cdb9-498c-a6b1-11017a3f827f",
+      "8": "espn-owner-e2f4cc41-9234-4bea-9aa7-3c1956302f27",
+      "13": "espn-owner-e489bcd9-5dd3-4487-b9bc-9cbbc93962d1",
+      "14": "espn-owner-f6d9c6d7-b364-4ff6-b6f7-34be83c34ea8"
+    },
+    "2026": {
+      "13": "espn-owner-2db19f63-5142-4c59-b8f1-efa6b94dffc5",
+      "5": "espn-owner-3b7b82eb-6abd-4b1b-94c6-14735d347324",
+      "2": "espn-owner-5ed815e3-641e-4a27-9815-e3641e7a2712",
+      "12": "espn-owner-799dfaf6-830c-4ebf-9dfa-f6830cfebf20",
+      "1": "espn-owner-7d139ae0-2931-4ae8-b62d-322f30ab9977",
+      "7": "espn-owner-7ec00747-7b7d-4f20-a898-265a9237a760",
+      "9": "espn-owner-88d65a16-3a49-4ee9-89cc-53a6ca08f93d",
+      "6": "espn-owner-8cd31793-6dd6-40b4-9317-936dd640b452",
+      "11": "espn-owner-affbc88a-5398-4db8-bbc8-8a53981db890",
+      "4": "espn-owner-b5d032b7-2a00-473c-8ce8-b88b9a078e0e",
+      "3": "espn-owner-d30766c2-73a1-4865-9edc-5309d33778db",
+      "8": "espn-owner-e2f4cc41-9234-4bea-9aa7-3c1956302f27",
+      "14": "espn-owner-f6d9c6d7-b364-4ff6-b6f7-34be83c34ea8"
+    }
+  }
+}

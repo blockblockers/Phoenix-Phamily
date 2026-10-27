@@ -1,0 +1,41 @@
+{
+  "unresolved": [],
+  "multiple_owners": [
+    {
+      "year": "2015",
+      "team_id": 22,
+      "name": "Hangin' With  Mr. Cooper",
+      "owner_ids": [
+        "{89cbcb1c-6329-45ed-8977-cc2adf291564}",
+        "{96ac0e52-c236-4e7d-95b4-2004cc7d224e}"
+      ]
+    },
+    {
+      "year": "2016",
+      "team_id": 22,
+      "name": "Faggot Christ",
+      "owner_ids": [
+        "{89cbcb1c-6329-45ed-8977-cc2adf291564}",
+        "{96ac0e52-c236-4e7d-95b4-2004cc7d224e}"
+      ]
+    },
+    {
+      "year": "2017",
+      "team_id": 22,
+      "name": "Brees Nuts",
+      "owner_ids": [
+        "{89cbcb1c-6329-45ed-8977-cc2adf291564}",
+        "{96ac0e52-c236-4e7d-95b4-2004cc7d224e}"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "summary": {
+    "season_team_entries": 244,
+    "mapped_entries": 241,
+    "franchises": 29,
+    "unresolved": 0,
+    "multiple_owner_entries": 3,
+    "conflicts": 0
+  }
+}
