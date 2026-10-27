@@ -25,8 +25,13 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           THROUGH: ${{ inputs.through }}
         run: python build_legacy.py --through "${THROUGH:-2025}"
+      - name: Infer historical identities
+        run: python infer_identities.py
       - uses: actions/upload-artifact@v4
         with:
           name: phoenix-phamily-legacy-archive
-          path: legacy/archive.json
+          path: |
+            legacy/archive.json
+            legacy/identities.json
+            legacy/identity_review.json
           retention-days: 90

@@ -52,3 +52,11 @@ Each mapping is a **season-specific ESPN team ID** to your stable franchise iden
 6. Re-run **Phoenix Phamily weekly stats** using **Run workflow**, not Re-run jobs, after committing archive and identity mappings. The weekly JSON now contains `legacy_rivalries` and `legacy_warning`, and Markdown has a short legacy section. If none of the six current matchups have two mapped historical franchises, the section may be empty.
 
 Archive is intentionally separate from weekly stats and does not auto-refresh. It collects **regular-season** games where the ESPN API returns box scores, with top three active starters when available. It does not yet claim playoff or championship records. 2013–2018 player detail may be unavailable. Some old seasons may have different scoring rules. The archive may contain owner-sensitive information; keep your repository private.
+
+## Version 3.1 — automatic identity inference
+
+The historical archive workflow now generates `legacy/identities.json` and `legacy/identity_review.json` automatically alongside `legacy/archive.json`. Download and commit **both** `archive.json` and `identities.json` into `legacy/` before running the weekly collector. `identity_review.json` is optional and shows unmapped seasons, co-owned teams, and conflicting mappings.
+
+Identity inference uses exact ESPN owner identifiers where available and otherwise exact ESPN account handles. It does **not** link teams by name or team ID alone. Account handles are useful evidence but are not guaranteed immutable; manually check any doubtful matches. Multi-owner entries are intentionally left unresolved. The inference preserves existing manual identity mappings if you run it against a populated `legacy/identities.json`. If older ESPN seasons lack owner data, they remain unmapped and won't produce fabricated rivalries.
+
+The archive workflow also fetches a 2026 owner snapshot so historic identities can be linked to current teams. If you previously ran the archive workflow, **Run workflow** again after uploading the updated `legacy.py`, `build_legacy.py`, `infer_identities.py`, and `.github/workflows/legacy.yml`. The GitHub artifact is not committed automatically.

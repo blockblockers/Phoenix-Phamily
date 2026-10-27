@@ -17,6 +17,28 @@ def franchise_key(year, team_id, identities):
     return identities.get('seasons', {}).get(str(year), {}).get(str(team_id))
 
 
+def extract_owner_ids(team):
+    """Extract stable owner/account identifiers when exposed; not display names."""
+    ids = []
+    for attr in ('owners', 'owner'):
+        value = getattr(team, attr, None)
+        if value is None:
+            continue
+        items = value if isinstance(value, (list, tuple)) else [value]
+        for item in items:
+            if isinstance(item, dict):
+                candidate = item.get('id') or item.get('ownerId') or item.get('userId')
+            elif isinstance(item, str):
+                # Exact ESPN account handles are useful continuity hints, but not immutable IDs.
+                candidate = 'handle:' + item.strip().casefold() if item.strip() else None
+            else:
+                candidate = (getattr(item, 'id', None) or getattr(item, 'ownerId', None)
+                             or getattr(item, 'userId', None))
+            if candidate is not None and str(candidate).strip():
+                ids.append(str(candidate).strip())
+    return sorted(set(ids))
+
+
 def build_archive(league_factory, end_year=2025):
     identities = read_json(IDENTITIES, {'franchises': {}, 'seasons': {}})
     archive = {'schema': 1, 'start_year': START_YEAR, 'end_year': end_year,
@@ -28,7 +50,7 @@ def build_archive(league_factory, end_year=2025):
             teams = {int(t.team_id): t for t in league.teams}
             for tid, t in teams.items():
                 season['teams'].append({'team_id': tid, 'name': t.team_name,
-                    'franchise_id': franchise_key(year, tid, identities)})
+                    'franchise_id': franchise_key(year, tid, identities), 'owner_ids': extract_owner_ids(t)})
             # Historical box-score support varies by season/API. Try each regular-season week;
             # failed weeks are recorded, never fabricated or treated as a complete record.
             max_week = int(getattr(league.settings, 'reg_season_count', 14) or 14)
