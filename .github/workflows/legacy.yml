@@ -1,0 +1,32 @@
+name: Phoenix Phamily historical archive (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      through:
+        description: 'Last historical season (2013–2025)'
+        required: false
+        default: '2025'
+        type: string
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Build historical archive
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          THROUGH: ${{ inputs.through }}
+        run: python build_legacy.py --through "${THROUGH:-2025}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phoenix-phamily-legacy-archive
+          path: legacy/archive.json
+          retention-days: 90

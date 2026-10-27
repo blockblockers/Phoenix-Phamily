@@ -14,3 +14,6 @@ Always bold **team names** in narrative, never replace with ESPN usernames. Use 
 **External news:** research NFL.com, ESPN, and other reputable accessible sources for the *exact scoring week*. Verify date, player/team, and context. Add attribution/source links for specific factual news claims. Do not invent injuries, snaps, transactions, plays or quotes. If no verified coverage, rely on fantasy data and say so.
 
 **Quality checks:** all six games covered, scoring bonuses correctly assigned, 12 editorial power rankings, ~1,200 words, consistent winners and score margins. If scoring week or owner name is missing, flag it instead of guessing.
+
+## Version 3 historical callbacks
+Use `legacy_rivalries` only when present, verified and relevant; maximum two brief callbacks in a recap. Recorded meetings are incomplete when archive years/weeks are unavailable or owner/franchise mappings are missing; NEVER call these "all-time" or "lifetime" records without full verification. Cite the exact year/week and player performance from the archive. Matchups without identity mapping have no eligible rivalry. Keep the present-week game as the primary story. Historical owner relationships require independent confirmation; franchise ID alone is not proof of the same owner.

@@ -1,4 +1,4 @@
-"""Phoenix Phamily v2: private ESPN league, historical results, owner reference, recap brief."""
+"""Phoenix Phamily v3: private ESPN league, historical results, owner reference, recap brief."""
 import argparse
 import json
 import os
@@ -6,6 +6,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from espn_api.football import League
+from legacy import rivalry_notes
 
 LEAGUE_ID = 1106154
 YEAR = 2026
@@ -162,6 +163,13 @@ def markdown(output):
             lines.append('  - Top bench scores (not automatically startable swaps): ' + (', '.join(f"{p['name']} {p['points']:.2f}" for p in t['top_bench']) or 'None'))
             lines.append('  - Below projection: ' + (', '.join(f"{p['name']} {p['below_projection']:.2f} below" for p in t['underperformers'] if p['below_projection'] > 0) or 'None'))
         lines.append('')
+    lines += ['## Legacy rivalry callbacks (select 0–2, verified and relevant)', '']
+    for r in output.get('legacy_rivalries', []):
+        g = r['closest_recorded_game']
+        lines.append(f"- {r['franchises'][0]} vs {r['franchises'][1]}: {r['recorded_meetings']} recorded meetings; closest {g['year']} W{g['week']}, {g['home_score']:.2f}–{g['away_score']:.2f}. Historical stars: " + ', '.join(p['name'] + ' ' + str(p['points']) for p in (g.get('home_stars', []) + g.get('away_stars', []))[:4]))
+    if output.get('legacy_warning'):
+        lines.append(output['legacy_warning'])
+    lines += ['', 'These are archive-covered meetings only, not guaranteed lifetime records. Do not infer historical owner identity without verification.', '']
     lines += ['## News research checklist', '', 'Research verified NFL game reports, injuries, usage and transactions for the exact ESPN scoring week. Include source URLs and dates. Do not claim an injury caused low fantasy points without verification. Never treat a Tuesday report as a Sunday event.', '', '## Recap instructions', '', 'Use `recap_instructions.md` for the fixed ~1,200-word format. Distinguish H2H and bonus wins; standings above are calculated from available weekly results. Do not call weekly scoring ranks editorial power rankings. Do not invent news, injuries, trades, playoff odds, or owner names.', '']
     return '\n'.join(lines)
 
@@ -183,7 +191,8 @@ def main():
                               'owner': overrides.get(int(t.team_id)) or owner_name(t),
                               'owner_source': 'manual override' if int(t.team_id) in overrides else 'ESPN' if owner_name(t) else 'unavailable'} for t in league.teams}
     weeks = [weekly(league, w, {i: t['name'] for i, t in teams.items()}) for w in range(1, target+1)]
-    output = dict(league='Phoenix Phamily', league_id=LEAGUE_ID, year=YEAR, week=target,
+    legacy_notes, legacy_warning = rivalry_notes(weeks[-1], YEAR)
+    output = dict(legacy_rivalries=legacy_notes, legacy_warning=legacy_warning, league='Phoenix Phamily', league_id=LEAGUE_ID, year=YEAR, week=target,
                   generated_utc=datetime.now(timezone.utc).isoformat(), owners=list(teams.values()),
                   season_standings=summarize(weeks, teams), current_week=weeks[-1],
                   storylines=highlights(weeks[-1], teams), historical_weeks=weeks,

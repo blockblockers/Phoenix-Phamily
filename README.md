@@ -25,3 +25,30 @@ The collector tries ESPN team `owners` / `owner` fields. Some ESPN API/library v
 - Bench points are not proof that a legal lineup swap existed; positional eligibility and lock times aren't evaluated.
 - News and subjective power rankings are **not** automatically fetched or generated. ChatGPT researches verified week-specific news when drafting.
 - Do not publish raw JSON if it contains personal owner names you don't wish to share.
+
+## Version 3 — legacy rivalry archive (2013–2025)
+
+V3 adds `legacy.py`, `build_legacy.py`, `.github/workflows/legacy.yml` and `legacy/identities.json` and modifies `collector.py` and `recap_instructions.md`. Keep your existing `owner_overrides.json` unchanged when upgrading. `weekly.yml` and secrets remain unchanged.
+
+1. Upload new/modified files to the repository, preserving folder paths. **Do not overwrite your populated `owner_overrides.json`.**
+2. GitHub Actions → **Phoenix Phamily historical archive (manual)** → Run workflow. This may take a while and older ESPN years may fail; errors are recorded rather than fabricated.
+3. Download the `phoenix-phamily-legacy-archive` artifact and **commit `archive.json` to `legacy/archive.json` in the repository**. The weekly workflow cannot read an artifact from a different workflow automatically.
+4. Inspect `legacy/archive.json` seasons/errors. The collector never claims complete league history when historical endpoints omit weeks.
+5. Populate `legacy/identities.json` by checking ESPN historical owners/teams. Example:
+
+```json
+{
+  "franchises": {
+    "owner-a": {"label": "Preferred franchise name", "owner": "Preferred owner name"}
+  },
+  "seasons": {
+    "2026": {"17": "owner-a"},
+    "2025": {"4": "owner-a"}
+  }
+}
+```
+
+Each mapping is a **season-specific ESPN team ID** to your stable franchise identifier. Reused team IDs in another season are NOT assumed to identify the same owner. The `franchises` metadata is for human reference; mappings under `seasons` drive comparisons. For a renamed team with the same owner, use the same franchise ID; for a new owner, create a different franchise ID. You can map multiple years gradually. If ownership continuity is uncertain, leave it unmapped. Current owner overrides are display names only, not proof of historical ownership.
+6. Re-run **Phoenix Phamily weekly stats** using **Run workflow**, not Re-run jobs, after committing archive and identity mappings. The weekly JSON now contains `legacy_rivalries` and `legacy_warning`, and Markdown has a short legacy section. If none of the six current matchups have two mapped historical franchises, the section may be empty.
+
+Archive is intentionally separate from weekly stats and does not auto-refresh. It collects **regular-season** games where the ESPN API returns box scores, with top three active starters when available. It does not yet claim playoff or championship records. 2013–2018 player detail may be unavailable. Some old seasons may have different scoring rules. The archive may contain owner-sensitive information; keep your repository private.
