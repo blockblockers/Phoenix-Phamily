@@ -5,7 +5,11 @@ ROOT=Path(__file__).resolve().parent
 
 def configs():
     for p in sorted((ROOT/'leagues').glob('*/league.json')):
-        d=json.loads(p.read_text(encoding='utf-8')); yield p.parent,d
+        try:
+            d=json.loads(p.read_text(encoding='utf-8'))
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f'INVALID JSON in {p.relative_to(ROOT)} at line {exc.lineno}, column {exc.colno}: {exc.msg}') from exc
+        yield p.parent,d
 
 def validate(d):
     if not isinstance(d.get('espn_league_id'),int) or d['espn_league_id']<=0: raise ValueError('Invalid ESPN league ID')
