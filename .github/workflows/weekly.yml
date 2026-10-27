@@ -1,0 +1,39 @@
+name: Phoenix Phamily weekly stats
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Completed ESPN week (blank = last completed week)'
+        required: false
+        type: string
+  schedule:
+    - cron: '15 9 * * 2'
+      timezone: 'America/Phoenix'
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Collect ESPN statistics
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          WEEK: ${{ inputs.week }}
+        run: |
+          if [ -n "$WEEK" ]; then
+            python collector.py --week "$WEEK"
+          else
+            python collector.py
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phoenix-phamily-weekly-report
+          path: reports/
+          retention-days: 90
