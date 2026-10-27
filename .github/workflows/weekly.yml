@@ -1,42 +1,44 @@
-name: Phoenix Phamily weekly stats
+name: All leagues weekly recap
 on:
   workflow_dispatch:
     inputs:
+      league:
+        description: 'League slug or all'
+        default: all
+        required: true
+        type: string
       week:
-        description: 'Completed ESPN week (blank = last completed week)'
+        description: 'Completed ESPN week (blank = last completed)'
         required: false
         type: string
   schedule:
     - cron: '15 9 * * 2'
-      timezone: 'America/Phoenix'
 permissions:
   contents: read
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - name: Collect ESPN statistics
+      - name: Collect all selected leagues
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          SELECTED_LEAGUE: ${{ inputs.league }}
           WEEK: ${{ inputs.week }}
         run: |
-          if [ -n "$WEEK" ]; then
-            python collector.py --week "$WEEK"
-          else
-            python collector.py
-          fi
-      - name: Enrich with sourced NFL game logs (best effort)
-        continue-on-error: true
-        run: python nfl_enrichment.py --latest
+          args=(--mode weekly --league "${SELECTED_LEAGUE:-all}")
+          if [ -n "$WEEK" ]; then args+=(--week "$WEEK"); fi
+          python run_leagues.py "${args[@]}"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: phoenix-phamily-weekly-report
-          path: reports/
+          name: all-leagues-weekly-reports
+          path: leagues/*/reports/
           retention-days: 90
+          if-no-files-found: warn

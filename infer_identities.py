@@ -1,3 +1,4 @@
+import os
 """Infer stable identities from ESPN owner IDs; avoid guesses based on team ID/name."""
 import argparse
 import json
@@ -22,7 +23,7 @@ def main():
     old_seasons = old.get('seasons', {})
     old_franchises = old.get('franchises', {})
     entries = [(str(s['year']), t) for s in archive.get('seasons', []) for t in s.get('teams', [])]
-    entries += [('2026', t) for t in archive.get('current_teams', [])]
+    entries += [(os.getenv('RECAP_SEASON', '2026'), t) for t in archive.get('current_teams', [])]
     owner_to_entries = defaultdict(list)
     review = {'unresolved': [], 'multiple_owners': [], 'conflicts': [], 'summary': {}}
     for year, t in entries:

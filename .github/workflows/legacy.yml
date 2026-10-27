@@ -1,37 +1,41 @@
-name: Phoenix Phamily historical archive (manual)
+name: Selected league historical archive
 on:
   workflow_dispatch:
     inputs:
+      league:
+        description: 'League slug or all'
+        required: true
+        default: phoenix-phamily
+        type: string
       through:
-        description: 'Last historical season (2013–2025)'
+        description: 'Last historical year (blank = season minus one)'
         required: false
-        default: '2025'
         type: string
 permissions:
   contents: read
 jobs:
   archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - name: Build historical archive
+      - name: Build selected archive
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          SELECTED_LEAGUE: ${{ inputs.league }}
           THROUGH: ${{ inputs.through }}
-        run: python build_legacy.py --through "${THROUGH:-2025}"
-      - name: Infer historical identities
-        run: python infer_identities.py
+        run: |
+          args=(--mode archive --league "${SELECTED_LEAGUE:-phoenix-phamily}")
+          if [ -n "$THROUGH" ]; then args+=(--through "$THROUGH"); fi
+          python run_leagues.py "${args[@]}"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: phoenix-phamily-legacy-archive
-          path: |
-            legacy/archive.json
-            legacy/identities.json
-            legacy/identity_review.json
+          name: selected-league-archives
+          path: leagues/*/legacy/
           retention-days: 90

@@ -1,0 +1,17 @@
+{
+  "slug": "new-league",
+  "league_name": "My New League",
+  "espn_league_id": 123456,
+  "season": 2026,
+  "enabled": false,
+  "scoring": {
+    "top_half_bonus_win": false
+  },
+  "recap": {
+    "target_words": 1200,
+    "tone": "Witty, team-name-specific trash talk throughout",
+    "team_personalities": {
+      "Example Team": "Describe the recurring joke here"
+    }
+  }
+}

@@ -8,8 +8,10 @@ from pathlib import Path
 from espn_api.football import League
 from legacy import rivalry_notes
 
-LEAGUE_ID = 1106154
-YEAR = 2026
+LEAGUE_ID = int(os.getenv("RECAP_LEAGUE_ID", "1106154"))
+YEAR = int(os.getenv("RECAP_SEASON", "2026"))
+LEAGUE_NAME = os.getenv("RECAP_LEAGUE_NAME", "Phoenix Phamily")
+BONUS_ENABLED = os.getenv("RECAP_TOP_HALF_BONUS", "true").lower() == "true"
 EXCLUDED = {'BE', 'IR'}
 
 
@@ -108,9 +110,9 @@ def weekly(league, week, team_names):
         raise ValueError(f'Week {week}: incomplete teams: {len(scores)}/{len(team_names)}')
     ranks = sorted(scores, key=lambda i: (-scores[i], team_names[i]))
     half = len(ranks) // 2
-    if len(ranks) % 2 or scores[ranks[half-1]] == scores[ranks[half]]:
-        raise ValueError(f'Week {week}: odd team count or cutoff tie requires manual review')
-    bonus = set(ranks[:half])
+    if len(ranks) % 2 or (BONUS_ENABLED and scores[ranks[half-1]] == scores[ranks[half]]):
+        raise ValueError(f'Week {week}: odd team count or bonus cutoff tie requires manual review')
+    bonus = set(ranks[:half]) if BONUS_ENABLED else set()
     wins = {i: 0 for i in scores}
     ties = {i: 0 for i in scores}
     for m in matchups:
@@ -184,7 +186,7 @@ def highlights(week, teams):
 
 
 def markdown(output):
-    w = output['week']; lines = [f'# Phoenix Phamily — Week {w} recap research brief', '',
+    w = output['week']; lines = [f'# {output["league"]} — Week {w} recap research brief', '',
        '## Season standings (through this week)', '',
        '| Rank | Team | Owner | H2H W-L-T | Bonus wins | Combined wins | Points for | Avg | Last 3 weeks wins |',
        '|---:|---|---|---|---:|---:|---:|---:|---:|']
@@ -258,13 +260,14 @@ def main():
     weeks = [weekly(league, w, {i: t['name'] for i, t in teams.items()}) for w in range(1, target+1)]
     legacy_notes, legacy_warning = rivalry_notes(weeks[-1], YEAR)
     legacy_notes = enrich_rivalry_labels(legacy_notes, teams)
-    output = dict(legacy_rivalries=legacy_notes, legacy_warning=legacy_warning, league='Phoenix Phamily', league_id=LEAGUE_ID, year=YEAR, week=target,
+    output = dict(legacy_rivalries=legacy_notes, legacy_warning=legacy_warning, league=LEAGUE_NAME, league_id=LEAGUE_ID, year=YEAR, week=target,
                   generated_utc=datetime.now(timezone.utc).isoformat(), owners=list(teams.values()),
                   season_standings=summarize(weeks, teams), current_week=weeks[-1],
                   storylines=highlights(weeks[-1], teams), historical_weeks=weeks,
                   notes=['Computed standings from weeks 1 through target; validate against ESPN league rules and score corrections.',
                          'Top bench scores are opportunities to investigate, not proof of legal substitutions.',
-                         'Editorial power rankings and NFL news require separate research.'])
+                         'Editorial power rankings and NFL news require separate research.',
+                         'Top-half bonus enabled: ' + str(BONUS_ENABLED)])
     path = Path('reports'); path.mkdir(exist_ok=True)
     (path/f'week-{target:02d}.json').write_text(json.dumps(output, indent=2), encoding='utf-8')
     (path/f'week-{target:02d}.md').write_text(markdown(output), encoding='utf-8')

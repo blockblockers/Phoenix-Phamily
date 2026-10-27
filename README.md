@@ -1,62 +1,33 @@
-# Phoenix Phamily ESPN Recap Collector — v2
+# Multi-League ESPN Fantasy Recap Engine v4
 
-Private ESPN league **1106154**, season **2026**. GitHub Actions runs Tuesday 9:15 a.m. Phoenix time. Does not generate prose via API; creates a research brief for ChatGPT.
+One GitHub repository, one weekly workflow, independent reports, histories, and personalities per league. This generates **research briefs and sourced NFL game-log context**, not automatically written prose. Paste each league's outputs and league.json into ChatGPT to write the 1,150–1,250 word recap.
 
-## Upgrade from v1
+## Install
+1. Download the ZIP. Back up your existing repository and replace the root scripts and `.github/workflows` with this package. **Do not leave the old single-league workflows enabled**, or both will run.
+2. Your existing Phoenix Phamily settings and 2013–2025 historical archive are under `leagues/phoenix-phamily/`. When you rerun archive, download its artifacts and replace only the corresponding `legacy/` files.
+3. Keep GitHub repository Secrets `ESPN_S2` and `ESPN_SWID`. These are never committed. The same authenticated ESPN account must have access to each private league.
+4. In GitHub Actions, run **All leagues weekly recap** manually, league `all`, week blank or a completed week. Tuesday UTC schedule is `09:15 UTC` (02:15 Phoenix during MST).
+5. Download `all-leagues-weekly-reports` artifact. Inside it, reports are separated by league slug.
 
-Upload and overwrite `collector.py`, `README.md`, `.github/workflows/weekly.yml`, `requirements.txt`, `.gitignore`; add `owner_overrides.json` and `recap_instructions.md`. Keep the existing GitHub Actions secrets `ESPN_S2` and `ESPN_SWID`. Never paste cookies into GitHub code or ChatGPT.
+## Add another league
+1. Copy `leagues/_new-league-template` to `leagues/my-other-league`.
+2. Edit `league.json`: unique `slug` matching folder name, ESPN ID, season, league name, `scoring.top_half_bonus_win`, tone, and team personality jokes. Set `enabled` to `true`.
+3. Run the weekly workflow. Historical archive is optional; to create it run **Selected league historical archive** with league slug.
+4. Save downloaded historical files under `leagues/my-other-league/legacy/` and commit.
 
-## Run
+## Scoring
+- Phoenix Phamily: 1 H2H win plus top-half weekly points bonus; 12 teams, six bonus winners.
+- Other leagues: set `top_half_bonus_win` to `false` unless the league actually uses it. ESPN tie and special league rules may need adaptation.
+- Weekly standings are reconstructed from completed box scores and may differ from ESPN for manual adjustments, playoffs, or special rules.
 
-GitHub → Actions → **Phoenix Phamily weekly stats** → Run workflow → optional `week` (completed week only). Download artifact `phoenix-phamily-weekly-report`. Upload `week-XX.md` and optionally `week-XX.json` to ChatGPT with `recap_instructions.md`. Ask for NFL news research for that week before drafting.
+## Privacy and caveats
+- Never commit cookies. ESPN owners are included only if verified; no handles in published recaps.
+- `legacy` data is isolated per league; no mixing of rivalries across leagues.
+- Game-log enrichment is best effort and is not verified injury reporting.
+- Old 2013–2018 archive seasons have incomplete box-score coverage.
+- This release uses one ESPN credential pair for all leagues. Multiple ESPN accounts require additional secret-selection work.
+- Running all leagues currently processes them sequentially.
 
-Local: `pip install -r requirements.txt` then set environment variables `ESPN_S2` and `ESPN_SWID` securely and run `python collector.py --week 6`.
-
-## Owner names
-
-The collector tries ESPN team `owners` / `owner` fields. Some ESPN API/library versions return an ID or no display name. Check the `owners` array in JSON and the owner column in Markdown. For reliable friendly names, populate `owner_overrides.json` with **team IDs** (not team names, which can change), e.g. `{"17": "Preferred owner name"}`. This file is optional and starts as `{}`. Only add names you're comfortable storing in a private repository. If ESPN exposes opaque IDs, replace them with friendly names via overrides.
-
-## Limitations
-
-- The unofficial `espn_api` library may change or fail when ESPN sessions expire.
-- Historical stats are fetched for all weeks 1..target; ESPN corrections may change prior results.
-- Combined wins are H2H + top-half scoring bonus, with H2H ties tracked separately. The script stops on ties at the scoring-bonus cutoff.
-- Season standings are calculated, not necessarily ESPN's official playoff-seeding order. Playoff odds, league tiebreakers and bye weeks require additional rules.
-- Bench points are not proof that a legal lineup swap existed; positional eligibility and lock times aren't evaluated.
-- News and subjective power rankings are **not** automatically fetched or generated. ChatGPT researches verified week-specific news when drafting.
-- Do not publish raw JSON if it contains personal owner names you don't wish to share.
-
-## Version 3 — legacy rivalry archive (2013–2025)
-
-V3 adds `legacy.py`, `build_legacy.py`, `.github/workflows/legacy.yml` and `legacy/identities.json` and modifies `collector.py` and `recap_instructions.md`. Keep your existing `owner_overrides.json` unchanged when upgrading. `weekly.yml` and secrets remain unchanged.
-
-1. Upload new/modified files to the repository, preserving folder paths. **Do not overwrite your populated `owner_overrides.json`.**
-2. GitHub Actions → **Phoenix Phamily historical archive (manual)** → Run workflow. This may take a while and older ESPN years may fail; errors are recorded rather than fabricated.
-3. Download the `phoenix-phamily-legacy-archive` artifact and **commit `archive.json` to `legacy/archive.json` in the repository**. The weekly workflow cannot read an artifact from a different workflow automatically.
-4. Inspect `legacy/archive.json` seasons/errors. The collector never claims complete league history when historical endpoints omit weeks.
-5. Populate `legacy/identities.json` by checking ESPN historical owners/teams. Example:
-
-```json
-{
-  "franchises": {
-    "owner-a": {"label": "Preferred franchise name", "owner": "Preferred owner name"}
-  },
-  "seasons": {
-    "2026": {"17": "owner-a"},
-    "2025": {"4": "owner-a"}
-  }
-}
-```
-
-Each mapping is a **season-specific ESPN team ID** to your stable franchise identifier. Reused team IDs in another season are NOT assumed to identify the same owner. The `franchises` metadata is for human reference; mappings under `seasons` drive comparisons. For a renamed team with the same owner, use the same franchise ID; for a new owner, create a different franchise ID. You can map multiple years gradually. If ownership continuity is uncertain, leave it unmapped. Current owner overrides are display names only, not proof of historical ownership.
-6. Re-run **Phoenix Phamily weekly stats** using **Run workflow**, not Re-run jobs, after committing archive and identity mappings. The weekly JSON now contains `legacy_rivalries` and `legacy_warning`, and Markdown has a short legacy section. If none of the six current matchups have two mapped historical franchises, the section may be empty.
-
-Archive is intentionally separate from weekly stats and does not auto-refresh. It collects **regular-season** games where the ESPN API returns box scores, with top three active starters when available. It does not yet claim playoff or championship records. 2013–2018 player detail may be unavailable. Some old seasons may have different scoring rules. The archive may contain owner-sensitive information; keep your repository private.
-
-## Version 3.1 — automatic identity inference
-
-The historical archive workflow now generates `legacy/identities.json` and `legacy/identity_review.json` automatically alongside `legacy/archive.json`. Download and commit **both** `archive.json` and `identities.json` into `legacy/` before running the weekly collector. `identity_review.json` is optional and shows unmapped seasons, co-owned teams, and conflicting mappings.
-
-Identity inference uses exact ESPN owner identifiers where available and otherwise exact ESPN account handles. It does **not** link teams by name or team ID alone. Account handles are useful evidence but are not guaranteed immutable; manually check any doubtful matches. Multi-owner entries are intentionally left unresolved. The inference preserves existing manual identity mappings if you run it against a populated `legacy/identities.json`. If older ESPN seasons lack owner data, they remain unmapped and won't produce fabricated rivalries.
-
-The archive workflow also fetches a 2026 owner snapshot so historic identities can be linked to current teams. If you previously ran the archive workflow, **Run workflow** again after uploading the updated `legacy.py`, `build_legacy.py`, `infer_identities.py`, and `.github/workflows/legacy.yml`. The GitHub artifact is not committed automatically.
+## Local validation
+`python -m unittest discover -p 'test_*.py'`
+`python run_leagues.py --help`

@@ -1,0 +1,28 @@
+{
+  "slug": "phoenix-phamily",
+  "league_name": "Phoenix Phamily",
+  "espn_league_id": 1106154,
+  "season": 2026,
+  "enabled": true,
+  "scoring": {
+    "top_half_bonus_win": true
+  },
+  "recap": {
+    "target_words": 1200,
+    "tone": "Colorful ESPN sportswriter, personalized, witty aggressive team-name trash talk throughout",
+    "team_personalities": {
+      "The Boomers": "Older generation: retirement, early-bird specials, flip phones, obsolete technology",
+      "The Ladybirds": "Birds of prey, swarms, aerial supremacy",
+      "TD Law Firm Jackson, McConkey": "Courtroom, legal malpractice, billable hours, losing cases",
+      "Rice and Shine": "Breakfast, rice, waking up late",
+      "Cookin in the Kitchen": "Kitchen disasters, recipes, burnt food",
+      "Hail Mary": "Miracles, prayers, divine intervention",
+      "CHASIN A DUB": "Chasing an elusive victory",
+      "KC's McTeam": "McDonald's-style menu, McBeatdowns",
+      "Gibbs Me a Break": "Begging for breaks and lucky escapes",
+      "Drake It 'Til You Make It": "Fake it till you make it, Drake puns",
+      "Risky Business": "Investments, bankruptcy, risky decisions",
+      "Ceedee's TD's": "Touchdowns and CeeDee puns"
+    }
+  }
+}

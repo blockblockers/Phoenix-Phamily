@@ -1,0 +1,167 @@
+{
+  "unresolved": [],
+  "multiple_owners": [
+    {
+      "year": "2014",
+      "team_id": 2,
+      "name": "Team Squad up ",
+      "owner_ids": [
+        "{7779fead-0e8a-40c8-b9fe-ad0e8a60c857}",
+        "{f8967052-9b5b-4baf-9670-529b5b7baf59}"
+      ]
+    },
+    {
+      "year": "2018",
+      "team_id": 3,
+      "name": "Rollin with MaHomies",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2019",
+      "team_id": 3,
+      "name": "Delirious  Dawg House",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2020",
+      "team_id": 3,
+      "name": "Another Quon Bites the Dust ",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2020",
+      "team_id": 18,
+      "name": "Kamara  Virus",
+      "owner_ids": [
+        "{8b138585-42c0-4a7d-802d-d4bbae7d3382}",
+        "{ad6897cf-a657-4328-b138-6ad4ba5babc4}"
+      ]
+    },
+    {
+      "year": "2021",
+      "team_id": 3,
+      "name": "\ud83d\udec0 Chubba Dub Dub",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2021",
+      "team_id": 18,
+      "name": "Window  Lickers",
+      "owner_ids": [
+        "{8b138585-42c0-4a7d-802d-d4bbae7d3382}",
+        "{ad6897cf-a657-4328-b138-6ad4ba5babc4}"
+      ]
+    },
+    {
+      "year": "2022",
+      "team_id": 3,
+      "name": "Amon a Mission",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2022",
+      "team_id": 18,
+      "name": "Pineapple  Express",
+      "owner_ids": [
+        "{8b138585-42c0-4a7d-802d-d4bbae7d3382}",
+        "{ad6897cf-a657-4328-b138-6ad4ba5babc4}"
+      ]
+    },
+    {
+      "year": "2023",
+      "team_id": 3,
+      "name": "The Chase is on ",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2024",
+      "team_id": 3,
+      "name": "Movin On Up",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2024",
+      "team_id": 5,
+      "name": "Sweep the Hall",
+      "owner_ids": [
+        "{9d63cd3c-4fe4-435f-af9f-3de37e79a793}",
+        "{bae3ca45-44ed-48f6-8315-5c78d9f71715}"
+      ]
+    },
+    {
+      "year": "2025",
+      "team_id": 3,
+      "name": "Movin On Up",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2025",
+      "team_id": 5,
+      "name": "Why so Hurts! ",
+      "owner_ids": [
+        "{96c85b0e-a85a-440d-a199-4e2e892f196d}",
+        "{9d63cd3c-4fe4-435f-af9f-3de37e79a793}"
+      ]
+    },
+    {
+      "year": "2026",
+      "team_id": 3,
+      "name": "Drake It 'Til You Make It ",
+      "owner_ids": [
+        "{69fa217c-c62d-4af2-ba21-7cc62dcaf256}",
+        "{c99dbf2a-b985-4d1e-aa56-705c2a42b2f2}"
+      ]
+    },
+    {
+      "year": "2026",
+      "team_id": 5,
+      "name": "CHASIN A DUB ",
+      "owner_ids": [
+        "{96c85b0e-a85a-440d-a199-4e2e892f196d}",
+        "{9d63cd3c-4fe4-435f-af9f-3de37e79a793}"
+      ]
+    },
+    {
+      "year": "2026",
+      "team_id": 15,
+      "name": "Hail Mary",
+      "owner_ids": [
+        "{5784d462-de4a-424e-971e-2f6c1e7d59d9}",
+        "{7610f5d2-fb5b-4b30-867e-30ec0f9cd9dc}"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "summary": {
+    "season_team_entries": 163,
+    "mapped_entries": 146,
+    "franchises": 35,
+    "unresolved": 0,
+    "multiple_owner_entries": 17,
+    "conflicts": 0
+  }
+}

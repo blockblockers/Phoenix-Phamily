@@ -13,14 +13,14 @@ if not 2013 <= a.through <= 2025:
 s2, swid = os.getenv('ESPN_S2'), os.getenv('ESPN_SWID')
 if not s2 or not swid:
     p.error('ESPN_S2 and ESPN_SWID environment variables required')
-factory = lambda year: League(league_id=1106154, year=year, espn_s2=s2, swid=swid)
+factory = lambda year: League(league_id=int(os.getenv("RECAP_LEAGUE_ID", "1106154")), year=year, espn_s2=s2, swid=swid)
 archive = build_archive(factory, a.through)
 try:
-    current = factory(2026)
+    current = factory(int(os.getenv("RECAP_SEASON", "2026")))
     archive['current_teams'] = [
         {'team_id': int(t.team_id), 'name': t.team_name, 'owner_ids': extract_owner_ids(t)}
         for t in current.teams
     ]
 except Exception as exc:
-    archive.setdefault('warnings', []).append({'year': 2026, 'error': 'Current owner snapshot: ' + str(exc)[:200]})
+    archive.setdefault('warnings', []).append({'year': int(os.getenv('RECAP_SEASON', '2026')), 'error': 'Current owner snapshot: ' + str(exc)[:200]})
 ARCHIVE.write_text(json.dumps(archive, indent=2), encoding='utf-8')

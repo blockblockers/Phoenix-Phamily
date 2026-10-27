@@ -1,4 +1,4 @@
-# Phoenix Phamily — recap editorial contract (v3.1)
+# Multi-league fantasy — recap editorial contract (v3.1)
 
 **Length:** 1,150–1,250 words total for the published recap, including headings, awards, rankings and closing. Aim 1,200. Count before delivery; cut repetition rather than sections.
 
@@ -28,3 +28,6 @@
 - Use one or two relevant sourced NFL box-score details per matchup when available, with links to the source; never force every game log into the story.
 - Keep the published article at 1,150–1,250 words **including** headings, tables, rankings and awards; measure word count before publishing.
 - Do not copy ESPN usernames from legacy files or archived names into owner labels.
+
+## League personality
+Use `league.json` for the current league's `tone`, `team_personalities`, `running_jokes`, and scoring rules. Team-name-specific trash talk belongs in **every matchup, opening, awards, standings commentary, rankings, and closing**. Keep jokes varied and grounded in real results. For The Boomers, "Boomers" means the older generation; retirement, flip phones, and early-bird specials are appropriate jokes. Do not recycle the exact same punchline repeatedly. If `top_half_bonus_win` is false, do not mention or award a bonus.
