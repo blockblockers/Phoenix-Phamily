@@ -9,57 +9,90 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 2,
           "name": "Team pendy32",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{F8967052-9B5B-4BAF-9670-529B5B7BAF59}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Team Allison",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}"
+          ]
         },
         {
           "team_id": 4,
           "name": "mesa  monsters",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{F0FCEE0A-9CFA-4096-BCEE-0A9CFAB09624}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 6,
           "name": "Phat Pharm",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{DA606E7B-7B10-4B0D-A06E-7B7B105B0DD9}"
+          ]
         },
         {
           "team_id": 7,
           "name": "Team Kristi",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers BC's",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 10,
           "name": "Tempe Take Over",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A92707AC-4ABA-427D-A707-AC4ABAD27D53}"
+          ]
         },
         {
           "team_id": 11,
           "name": "Comeback Kids",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7ECACE7B-EC51-48AB-8ACE-7BEC51B8AB6C}"
+          ]
         }
       ],
       "matchups": [],
@@ -124,62 +157,99 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 2,
           "name": "Team Squad up ",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7779FEAD-0E8A-40C8-B9FE-AD0E8A60C857}",
+            "{F8967052-9B5B-4BAF-9670-529B5B7BAF59}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Phoenix Phunaddicts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 6,
           "name": "Phat Pharm",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{DA606E7B-7B10-4B0D-A06E-7B7B105B0DD9}"
+          ]
         },
         {
           "team_id": 7,
           "name": "Team Kristi",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers ....",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 10,
           "name": "Tempe Take Over",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A92707AC-4ABA-427D-A707-AC4ABAD27D53}"
+          ]
         },
         {
           "team_id": 12,
           "name": "Team Mesa Maulers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{E50FDC38-FA26-4947-8FDC-38FA2669470B}"
+          ]
         },
         {
           "team_id": 13,
           "name": "Team Sugar",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{19C99893-B71B-4016-922A-DA1C718293B3}"
+          ]
         },
         {
           "team_id": 14,
           "name": "Gilbert Dawgs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B39DF4DD-E0A0-4CDB-9DF4-DDE0A06CDB8D}"
+          ]
         }
       ],
       "matchups": [],
@@ -244,62 +314,98 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Phoenix Phunaddicts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 6,
           "name": "Sneaky Snipers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{DA606E7B-7B10-4B0D-A06E-7B7B105B0DD9}"
+          ]
         },
         {
           "team_id": 7,
           "name": "League Champion",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers ....",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 10,
           "name": "Tempe Take Over",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A92707AC-4ABA-427D-A707-AC4ABAD27D53}"
+          ]
         },
         {
           "team_id": 14,
           "name": "Gilbert Dawgs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B39DF4DD-E0A0-4CDB-9DF4-DDE0A06CDB8D}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Team Meeks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A20C5840-50D1-4051-8719-1783CD9B80B9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "Team Raider Nation",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EA216B15-880B-40FD-AF10-BB8514A79728}"
+          ]
         },
         {
           "team_id": 17,
           "name": "Team Barville",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7F4BA951-2D6F-47F2-BB89-7A670357FA54}"
+          ]
         }
       ],
       "matchups": [],
@@ -364,62 +470,98 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Phoenix Phunaddicts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 6,
           "name": "Sneaky Snipers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{DA606E7B-7B10-4B0D-A06E-7B7B105B0DD9}"
+          ]
         },
         {
           "team_id": 7,
           "name": "Going4A Comeback",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers ....",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 10,
           "name": "Tempe Take Over",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A92707AC-4ABA-427D-A707-AC4ABAD27D53}"
+          ]
         },
         {
           "team_id": 11,
           "name": "The  TOMahawks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 12,
           "name": "Bend it Like Beckham Jr",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9A7642C7-69B4-469D-BD0E-513986261E9F}"
+          ]
         },
         {
           "team_id": 13,
           "name": "Team pendgraft",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{F6EF3E6C-77C9-43F6-B87E-9C0A216D4F83}"
+          ]
         },
         {
           "team_id": 14,
           "name": "Team Deb",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{42AC6C30-8B29-4B46-807B-616DCC2F512E}"
+          ]
         }
       ],
       "matchups": [],
@@ -484,62 +626,98 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Phoenix Phunaddicts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 6,
           "name": "Sneaky Snipers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{DA606E7B-7B10-4B0D-A06E-7B7B105B0DD9}"
+          ]
         },
         {
           "team_id": 7,
           "name": "Team  Kristi",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers ....",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 10,
           "name": "Tempe Take Over",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A92707AC-4ABA-427D-A707-AC4ABAD27D53}"
+          ]
         },
         {
           "team_id": 11,
           "name": "The  TOMahawks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 12,
           "name": "Bend it Like Beckham Jr",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9A7642C7-69B4-469D-BD0E-513986261E9F}"
+          ]
         },
         {
           "team_id": 13,
           "name": "Team pendgraft",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{F6EF3E6C-77C9-43F6-B87E-9C0A216D4F83}"
+          ]
         },
         {
           "team_id": 14,
           "name": "Team Deb",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{42AC6C30-8B29-4B46-807B-616DCC2F512E}"
+          ]
         }
       ],
       "matchups": [],
@@ -604,62 +782,99 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Rollin with MaHomies",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers ....",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 11,
           "name": "The  TOMahawks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Reno Outlaws",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "Team Quinn",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{ABA18A19-C3E3-49CE-967F-2F660488C24F}"
+          ]
         },
         {
           "team_id": 17,
           "name": "Team Boscato",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B01A9F54-E351-4BD3-BD9A-607E180527D3}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Team Pendgraft",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D7EB7694-7459-412B-8E06-D851315726D9}"
+          ]
         },
         {
           "team_id": 19,
           "name": "Team Instant Kamara",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+          ]
         },
         {
           "team_id": 20,
           "name": "Captain Kirk",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7CD0A7C4-D5B5-4C01-8CD9-9FFBC53C729C}"
+          ]
         }
       ],
       "matchups": [],
@@ -724,62 +939,99 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Delirious  Dawg House",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "We(a)kly Underdogs",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler  Colts",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Bone Crushers ....",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 11,
           "name": "The  TOMahawks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Reno Outlaws",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "Team Kristi",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 17,
           "name": "Team Fitzgerald",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{A50211DF-D190-43CB-AE4F-513531E650E2}"
+          ]
         },
         {
           "team_id": 18,
           "name": "\ud83d\udca9 \ud83d\udca9   ",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{DA606E7B-7B10-4B0D-A06E-7B7B105B0DD9}"
+          ]
         },
         {
           "team_id": 19,
           "name": "Instant Kamara",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+          ]
         },
         {
           "team_id": 20,
           "name": "Ertz So Good",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7CD0A7C4-D5B5-4C01-8CD9-9FFBC53C729C}"
+          ]
         }
       ],
       "matchups": [
@@ -3522,62 +3774,100 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Another Quon Bites the Dust ",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "Arizona Bikers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler Brady's Bunch",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "The glass is  half Fuller",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 11,
           "name": "The  TOMahawks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Hail Mary",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "Team Kristi",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 17,
           "name": "ALL GURLEY \ud83c\udfc8",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{42AC6C30-8B29-4B46-807B-616DCC2F512E}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Kamara  Virus",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{8B138585-42C0-4A7D-802D-D4BBAE7D3382}",
+            "{AD6897CF-A657-4328-B138-6AD4BA5BABC4}"
+          ]
         },
         {
           "team_id": 19,
           "name": "Instant Kamara",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+          ]
         },
         {
           "team_id": 20,
           "name": "Hillin with Ma\u2019homies",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7CD0A7C4-D5B5-4C01-8CD9-9FFBC53C729C}"
+          ]
         }
       ],
       "matchups": [
@@ -6320,62 +6610,100 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "\ud83d\udec0 Chubba Dub Dub",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "Victorious Secret",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9298B9C1-3D18-4D1E-9E3F-F050D3F98598}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler Mother Tucker",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Zekeing a Tee Time!",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 11,
           "name": "The  TOMahawks",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Hail Mary",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "All En 4 Fitz",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 17,
           "name": "\ud83c\udfc8 DangeRUSS ",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{42AC6C30-8B29-4B46-807B-616DCC2F512E}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Window  Lickers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{8B138585-42C0-4A7D-802D-D4BBAE7D3382}",
+            "{AD6897CF-A657-4328-B138-6AD4BA5BABC4}"
+          ]
         },
         {
           "team_id": 19,
           "name": "Thanos' Snap  Count",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9A7642C7-69B4-469D-BD0E-513986261E9F}"
+          ]
         },
         {
           "team_id": 20,
           "name": "Charkbait Hoohaha",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7CD0A7C4-D5B5-4C01-8CD9-9FFBC53C729C}"
+          ]
         }
       ],
       "matchups": [
@@ -9328,62 +9656,100 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Amon a Mission",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "Connor's Team Connor's Team",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler Mother Tucker",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "\ud83d\udd25 Moved off Akers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 11,
           "name": "AZ Pina Rapida",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Hail Mary",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "My Kupp Runneth Over",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 17,
           "name": "\ud83c\udfc8 MIXON it up!",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{42AC6C30-8B29-4B46-807B-616DCC2F512E}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Pineapple  Express",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{8B138585-42C0-4A7D-802D-D4BBAE7D3382}",
+            "{AD6897CF-A657-4328-B138-6AD4BA5BABC4}"
+          ]
         },
         {
           "team_id": 19,
           "name": "Injured Reserve IR",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9A7642C7-69B4-469D-BD0E-513986261E9F}"
+          ]
         },
         {
           "team_id": 20,
           "name": "Henry IMahome",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7CD0A7C4-D5B5-4C01-8CD9-9FFBC53C729C}"
+          ]
         }
       ],
       "matchups": [
@@ -12546,62 +12912,99 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "The Chase is on ",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "Ya Digg",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler Mother Tucker",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Risky Business",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 11,
           "name": "Jackson Brown",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Hail Mary",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "TnT... I'm dyno-mite",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EDF247B0-3C01-455A-B247-B03C01055A9B}"
+          ]
         },
         {
           "team_id": 17,
           "name": "\ud83c\udfc8 Mis Primos!",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{42AC6C30-8B29-4B46-807B-616DCC2F512E}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Remember The Tightends",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{73288A7D-2D36-4E5E-98D0-6AF849CB2747}"
+          ]
         },
         {
           "team_id": 19,
           "name": "Baskin Dobbins",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9A7642C7-69B4-469D-BD0E-513986261E9F}"
+          ]
         },
         {
           "team_id": 20,
           "name": "I see London",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{7CD0A7C4-D5B5-4C01-8CD9-9FFBC53C729C}"
+          ]
         }
       ],
       "matchups": [
@@ -15764,52 +16167,84 @@
         {
           "team_id": 1,
           "name": "Scottsdale Sleepers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Movin On Up",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "Sweep the Hall",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}",
+            "{BAE3CA45-44ED-48F6-8315-5C78D9F71715}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler Mother Tucker",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Risky Business",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 11,
           "name": "Infinity and Bijan \ud83c\udf20",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Hail Mary",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "The Boomers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 17,
           "name": "The Ladybirds",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EF1C9444-F3BA-430B-B8FE-6D8F82941C22}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Joshua's Finest Team",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{9B413022-876C-4232-BB00-3E9B96162596}"
+          ]
         }
       ],
       "matchups": [
@@ -18447,52 +18882,84 @@
         {
           "team_id": 1,
           "name": "T. Hill's Baby Bills",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+          ]
         },
         {
           "team_id": 3,
           "name": "Movin On Up",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+            "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+          ]
         },
         {
           "team_id": 5,
           "name": "Why so Hurts! ",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{96C85B0E-A85A-440D-A199-4E2E892F196D}",
+            "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+          ]
         },
         {
           "team_id": 8,
           "name": "Chandler Crushers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+          ]
         },
         {
           "team_id": 9,
           "name": "Risky Business",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+          ]
         },
         {
           "team_id": 11,
           "name": "Buffalo Soldiers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+          ]
         },
         {
           "team_id": 15,
           "name": "Hail Mary",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}"
+          ]
         },
         {
           "team_id": 16,
           "name": "The Boomers",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+          ]
         },
         {
           "team_id": 17,
           "name": "The Ladybirds",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{EF1C9444-F3BA-430B-B8FE-6D8F82941C22}"
+          ]
         },
         {
           "team_id": 18,
           "name": "Robbin' Touchdowns",
-          "franchise_id": null
+          "franchise_id": null,
+          "owner_ids": [
+            "{BAE3CA45-44ED-48F6-8315-5C78D9F71715}"
+          ]
         }
       ],
       "matchups": [
@@ -20951,5 +21418,94 @@
     }
   ],
   "warnings": [],
-  "identity_policy": "explicit season+team mapping only"
+  "identity_policy": "explicit season+team mapping only",
+  "current_teams": [
+    {
+      "team_id": 1,
+      "name": "Gibbs Me a Break",
+      "owner_ids": [
+        "{B5D032B7-2A00-473C-8CE8-B88B9A078E0E}"
+      ]
+    },
+    {
+      "team_id": 3,
+      "name": "Drake It 'Til You Make It ",
+      "owner_ids": [
+        "{69FA217C-C62D-4AF2-BA21-7CC62DCAF256}",
+        "{C99DBF2A-B985-4D1E-AA56-705C2A42B2F2}"
+      ]
+    },
+    {
+      "team_id": 5,
+      "name": "CHASIN A DUB ",
+      "owner_ids": [
+        "{96C85B0E-A85A-440D-A199-4E2E892F196D}",
+        "{9D63CD3C-4FE4-435F-AF9F-3DE37E79A793}"
+      ]
+    },
+    {
+      "team_id": 8,
+      "name": "KC's McTeam",
+      "owner_ids": [
+        "{3E1BFB9A-57A2-405A-9CB7-44E241012C5C}"
+      ]
+    },
+    {
+      "team_id": 9,
+      "name": "Risky Business",
+      "owner_ids": [
+        "{BBE8832A-9829-4C48-A883-2A98290C4818}"
+      ]
+    },
+    {
+      "team_id": 11,
+      "name": "TD  Law  firm Jackson, McConkey",
+      "owner_ids": [
+        "{D39CB801-B4C5-45F2-BD5F-84AA057B18EC}"
+      ]
+    },
+    {
+      "team_id": 15,
+      "name": "Hail Mary",
+      "owner_ids": [
+        "{5784D462-DE4A-424E-971E-2F6C1E7D59D9}",
+        "{7610F5D2-FB5B-4B30-867E-30EC0F9CD9DC}"
+      ]
+    },
+    {
+      "team_id": 16,
+      "name": "The Boomers",
+      "owner_ids": [
+        "{3D89BBAE-20D5-40CC-89BB-AE20D530CCBB}"
+      ]
+    },
+    {
+      "team_id": 17,
+      "name": "The Ladybirds",
+      "owner_ids": [
+        "{EF1C9444-F3BA-430B-B8FE-6D8F82941C22}"
+      ]
+    },
+    {
+      "team_id": 18,
+      "name": "Ceedee's TD's ",
+      "owner_ids": [
+        "{BAE3CA45-44ED-48F6-8315-5C78D9F71715}"
+      ]
+    },
+    {
+      "team_id": 19,
+      "name": "Cookin in the Kitchen",
+      "owner_ids": [
+        "{514B11BE-64DF-4BB5-9ECE-B5D1598AA361}"
+      ]
+    },
+    {
+      "team_id": 20,
+      "name": "Rice and Shine ",
+      "owner_ids": [
+        "{5D6497A9-2B1F-431B-93F3-721E93635A00}"
+      ]
+    }
+  ]
 }
