@@ -4,7 +4,7 @@
   "espn_league_id": 1083280082,
   "season": 2026,
 "archive_start_year": 2023,
-  "enabled": false,
+  "enabled": true,
   "scoring": {
     "top_half_bonus_win": false
   },

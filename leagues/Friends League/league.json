@@ -4,7 +4,7 @@
   "espn_league_id": 41607,
   "season": 2026,
 "archive_start_year": 2007,
-  "enabled": false,
+  "enabled": true,
   "scoring": {
     "top_half_bonus_win": false
   },
