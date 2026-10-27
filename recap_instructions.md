@@ -1,19 +1,25 @@
-# Phoenix Phamily recap — editorial rules
+# Phoenix Phamily — recap editorial contract (v3.1)
 
-Target **1,200 words** (acceptable 1,100–1,300), keep all sections:
+**Length:** 1,150–1,250 words total for the published recap, including headings, awards, rankings and closing. Aim 1,200. Count before delivery; cut repetition rather than sections.
 
-1. **Opening roast (~100 words):** memorable weekly overview and league-specific storylines.
-2. **Six matchups (~480 words total):** each heading shows both team names and final scores; winner and margin; key starters, surprising bench performances and personalized team-name trash talk. Distinguish what actually happened from speculative counterfactuals.
-3. **Weekly awards (~130 words):** hero, disaster, bad beat, bench regret; use documented scores.
-4. **Bonus wins and standings (~120 words):** H2H wins vs top-half scoring bonus; combined weekly wins, standings and playoff implications only when supported by settings/data.
-5. **Editorial power rankings (~240 words):** all 12 teams in copyable plain text; weigh cumulative wins, points scored, last-three-week momentum and current roster strength. Editorial ranking is **not** weekly scoring order. Explain meaningful moves when previous rankings exist; don't invent prior ranking.
-6. **Closing roast and next-week lookahead (~130 words):** forward-looking, funny, no unsupported predictions as facts.
+## Required structure and budget
+- Opening (~80 words): memorable week-specific hook, two-win scoring reminder only when useful.
+- Six matchups (~600 words total, ~100 each): both team names, exact scores and winner, two or three meaningful fantasy performances, a genuinely relevant bench decision when supported, team-name-specific humor.
+- Historical callbacks (0–2, ~60 words total): only verified archive matches; cite season/week, historical names and actual score. Archive begins with usable box scores in 2019; do not imply all-time completeness.
+- Weekly awards (~110 words): hero, disaster, bad beat, bench regret; no unsupported assertions.
+- Standings and bonus-wins explanation (~110 words): combined H2H + top-half scoring bonus, don't mistake scoring bonus for H2H victory. Compact table allowed.
+- Editorial power rankings (~190 words): all 12 teams, copyable plain text, independent of weekly scoring ranks.
+- Closing (~70 words): distinct final roast and meaningful look ahead without invented next-week schedule.
 
-Always bold **team names** in narrative, never replace with ESPN usernames. Use owner names sparingly for personalization only when verified in `owners` mapping; don't publish sensitive account IDs. Use punchy, original, team-specific jokes; avoid generic filler and repetition. Honor the two-wins-per-week rule and avoid describing a bonus-only team as having won its matchup.
+## Identities
+- Always use **current team names** in headings, standings, power rankings, and as the primary referent in prose.
+- Use real owner first names occasionally only if the collector labels them as manually overridden or ESPN verified. If unavailable, use the team name; do not guess.
+- Never expose ESPN usernames, email addresses, login handles, member IDs, opaque franchise IDs or owner identity keys in published prose.
+- Historical callbacks must use current names plus historical season-specific team names.
 
-**External news:** research NFL.com, ESPN, and other reputable accessible sources for the *exact scoring week*. Verify date, player/team, and context. Add attribution/source links for specific factual news claims. Do not invent injuries, snaps, transactions, plays or quotes. If no verified coverage, rely on fantasy data and say so.
-
-**Quality checks:** all six games covered, scoring bonuses correctly assigned, 12 editorial power rankings, ~1,200 words, consistent winners and score margins. If scoring week or owner name is missing, flag it instead of guessing.
-
-## Version 3 historical callbacks
-Use `legacy_rivalries` only when present, verified and relevant; maximum two brief callbacks in a recap. Recorded meetings are incomplete when archive years/weeks are unavailable or owner/franchise mappings are missing; NEVER call these "all-time" or "lifetime" records without full verification. Cite the exact year/week and player performance from the archive. Matchups without identity mapping have no eligible rivalry. Keep the present-week game as the primary story. Historical owner relationships require independent confirmation; franchise ID alone is not proof of the same owner.
+## NFL research and factual discipline
+- Match the exact NFL scoring week and 2026 season; verify NFL game logs and news with dated sources (NFL.com/ESPN/team reports). Cite linked sources for real-life yardage, touchdowns, injuries, snaps, usage, or trades. Do not reuse later-week news as if it happened during the fantasy week.
+- `collector.py` does NOT fetch outside NFL news automatically. Without a separately sourced `nfl_context` input, rely only on ESPN fantasy scoring and projections; don't invent real-world game stats.
+- A high-scoring benched player is NOT automatically a legal replacement: check lineup slot eligibility, lock times, and available starters before claiming a manager 'cost themselves' the win.
+- Never make up quotes, rivalries, playoff odds, real names or events.
+- All 6 matchup outcomes, all scoring bonuses, 12 rankings, exact scores and margins must be checked against JSON.

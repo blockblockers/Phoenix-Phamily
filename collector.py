@@ -20,25 +20,64 @@ def num(v):
         return None
 
 
-def owner_name(team):
-    """ESPN's espn_api Team attributes differ by version; do not fabricate owners."""
-    for attr in ('owners', 'owner'):
-        val = getattr(team, attr, None)
-        if isinstance(val, str) and val.strip():
-            return val.strip()
-        if isinstance(val, (list, tuple)) and val:
-            names = []
-            for item in val:
-                if isinstance(item, str):
-                    names.append(item.strip())
-                elif isinstance(item, dict):
-                    names.append(str(item.get('displayName') or item.get('display_name') or item.get('firstName', '') + ' ' + item.get('lastName', '')).strip())
-                else:
-                    names.append(str(getattr(item, 'displayName', None) or getattr(item, 'display_name', None) or getattr(item, 'name', '')).strip())
-            names = [n for n in names if n]
-            if names:
-                return ', '.join(names)
-    return None
+def clean_human_name(first=None, last=None, display=None):
+    """Prefer verified ESPN first/last; reject handles, emails and generated names."""
+    import re
+    first, last = str(first or '').strip(), str(last or '').strip()
+    name = ' '.join(x for x in (first, last) if x)
+    if not name:
+        name = str(display or '').strip()
+    if not name or '@' in name or any(ch.isdigit() for ch in name):
+        return None
+    if re.search(r'(?i)(espnfan|^fan\b|^user\b|^team\b)', name):
+        return None
+    if not re.fullmatch(r"[\w .'-]+", name, re.UNICODE):
+        return None
+    # A single ESPN display name is often a handle, not a real name.
+    if not first and not last and len(name.split()) < 2:
+        return None
+    return name[:80]
+
+
+def member_directory(league):
+    """Use authenticated ESPN mTeam member records when exposed by espn_api."""
+    members = {}
+    response = None
+    try:
+        response = league.espn_request.get_league(views=['mTeam'])
+    except (AttributeError, TypeError, ValueError, KeyError) as exc:
+        print('Member directory unavailable:', type(exc).__name__)
+    except Exception as exc:
+        print('Member directory request failed:', type(exc).__name__)
+    if isinstance(response, list):
+        response = response[0] if response else {}
+    if isinstance(response, dict):
+        for member in response.get('members', []):
+            if not isinstance(member, dict):
+                continue
+            name = clean_human_name(member.get('firstName'), member.get('lastName'), member.get('displayName'))
+            if name and member.get('id'):
+                members[str(member['id']).strip().casefold()] = name
+    return members
+
+
+def owner_name(team, members):
+    owners = getattr(team, 'owners', None) or getattr(team, 'owner', None) or []
+    if not isinstance(owners, (list, tuple)):
+        owners = [owners]
+    names = []
+    for owner in owners:
+        if isinstance(owner, dict):
+            owner_id = owner.get('id') or owner.get('ownerId') or owner.get('userId')
+            name = members.get(str(owner_id).strip().casefold()) if owner_id else None
+            name = name or clean_human_name(owner.get('firstName'), owner.get('lastName'), owner.get('displayName'))
+        else:
+            owner_id = getattr(owner, 'id', None) or getattr(owner, 'ownerId', None)
+            name = members.get(str(owner_id).strip().casefold()) if owner_id else None
+            name = name or clean_human_name(getattr(owner, 'firstName', None), getattr(owner, 'lastName', None))
+        if name and name not in names:
+            names.append(name)
+    return ', '.join(names) if names else None
 
 
 def player(p):
@@ -166,12 +205,37 @@ def markdown(output):
     lines += ['## Legacy rivalry callbacks (select 0–2, verified and relevant)', '']
     for r in output.get('legacy_rivalries', []):
         g = r['closest_recorded_game']
-        lines.append(f"- {r['franchises'][0]} vs {r['franchises'][1]}: {r['recorded_meetings']} recorded meetings; closest {g['year']} W{g['week']}, {g['home_score']:.2f}–{g['away_score']:.2f}. Historical stars: " + ', '.join(p['name'] + ' ' + str(p['points']) for p in (g.get('home_stars', []) + g.get('away_stars', []))[:4]))
+        lines.append(f"- {r['current_teams'][0]} vs {r['current_teams'][1]}: {r['recorded_meetings']} recorded meetings; closest {g['year']} W{g['week']}, {g['home_score']:.2f}–{g['away_score']:.2f}. Historical team names: {g['home_team_name']} vs {g['away_team_name']}. Historical stars: " + ', '.join(p['name'] + ' ' + str(p['points']) for p in (g.get('home_stars', []) + g.get('away_stars', []))[:4]))
     if output.get('legacy_warning'):
         lines.append(output['legacy_warning'])
     lines += ['', 'These are archive-covered meetings only, not guaranteed lifetime records. Do not infer historical owner identity without verification.', '']
     lines += ['## News research checklist', '', 'Research verified NFL game reports, injuries, usage and transactions for the exact ESPN scoring week. Include source URLs and dates. Do not claim an injury caused low fantasy points without verification. Never treat a Tuesday report as a Sunday event.', '', '## Recap instructions', '', 'Use `recap_instructions.md` for the fixed ~1,200-word format. Distinguish H2H and bonus wins; standings above are calculated from available weekly results. Do not call weekly scoring ranks editorial power rankings. Do not invent news, injuries, trades, playoff odds, or owner names.', '']
+    lines += ['', '## Publication guardrails', '', 'Target 1,150–1,250 words, six matchups, all 12 power rankings. Use **team names** in headlines and prose. Owner real names only when verified; never print ESPN handles, login names, email addresses, member IDs or opaque franchise keys. NFL facts must be verified against dated sources for the scoring week; no news has been fetched by this collector.', '']
     return '\n'.join(lines)
+
+
+def enrich_rivalry_labels(notes, teams):
+    """Add present and historical team names; never publish opaque franchise IDs."""
+    from legacy import read_json, IDENTITIES, ARCHIVE
+    ids = read_json(IDENTITIES, {})
+    archive = read_json(ARCHIVE, {})
+    by_year = {int(season['year']): {int(t['team_id']): t['name'].strip() for t in season.get('teams', [])}
+               for season in archive.get('seasons', [])}
+    reverse = {v: teams[int(tid)]['name'] for tid, v in ids.get('seasons', {}).get(str(YEAR), {}).items()
+               if int(tid) in teams}
+    out = []
+    for note in notes:
+        g = note['closest_recorded_game']
+        yr = int(g['year'])
+        out.append({
+            'current_teams': [reverse.get(fid, 'Unknown current team') for fid in note['franchises']],
+            'recorded_meetings': note['recorded_meetings'],
+            'recorded_wins': {reverse.get(fid, 'Unknown current team'): wins for fid, wins in note['recorded_wins'].items()},
+            'closest_recorded_game': {**g, 'home_team_name': by_year.get(yr, {}).get(g['home_id'], 'Unknown historical team'),
+                                     'away_team_name': by_year.get(yr, {}).get(g['away_id'], 'Unknown historical team')},
+            'coverage_warning': note['coverage_warning']
+        })
+    return out
 
 
 def main():
@@ -187,11 +251,13 @@ def main():
     if not 1 <= target < current:
         raise SystemExit(f'Week {target} not completed according to ESPN (current week {current})')
     overrides = load_overrides(Path('owner_overrides.json'))
+    members = member_directory(league)
     teams = {int(t.team_id): {'id': int(t.team_id), 'name': t.team_name.strip(),
-                              'owner': overrides.get(int(t.team_id)) or owner_name(t),
-                              'owner_source': 'manual override' if int(t.team_id) in overrides else 'ESPN' if owner_name(t) else 'unavailable'} for t in league.teams}
+                              'owner': clean_human_name(display=overrides.get(int(t.team_id))) or overrides.get(int(t.team_id)) or owner_name(t, members),
+                              'owner_source': 'manual override' if int(t.team_id) in overrides else 'ESPN verified name' if owner_name(t, members) else 'unavailable'} for t in league.teams}
     weeks = [weekly(league, w, {i: t['name'] for i, t in teams.items()}) for w in range(1, target+1)]
     legacy_notes, legacy_warning = rivalry_notes(weeks[-1], YEAR)
+    legacy_notes = enrich_rivalry_labels(legacy_notes, teams)
     output = dict(legacy_rivalries=legacy_notes, legacy_warning=legacy_warning, league='Phoenix Phamily', league_id=LEAGUE_ID, year=YEAR, week=target,
                   generated_utc=datetime.now(timezone.utc).isoformat(), owners=list(teams.values()),
                   season_standings=summarize(weeks, teams), current_week=weeks[-1],
