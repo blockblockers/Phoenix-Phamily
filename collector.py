@@ -253,8 +253,8 @@ def main():
     overrides = load_overrides(Path('owner_overrides.json'))
     members = member_directory(league)
     teams = {int(t.team_id): {'id': int(t.team_id), 'name': t.team_name.strip(),
-                              'owner': clean_human_name(display=overrides.get(int(t.team_id))) or overrides.get(int(t.team_id)) or owner_name(t, members),
-                              'owner_source': 'manual override' if int(t.team_id) in overrides else 'ESPN verified name' if owner_name(t, members) else 'unavailable'} for t in league.teams}
+                              'owner': (clean_human_name(display=overrides.get(int(t.team_id))) if int(t.team_id) in overrides else owner_name(t, members)),
+                              'owner_source': 'manual override' if int(t.team_id) in overrides and clean_human_name(display=overrides.get(int(t.team_id))) else 'ESPN verified name' if owner_name(t, members) else 'unavailable'} for t in league.teams}
     weeks = [weekly(league, w, {i: t['name'] for i, t in teams.items()}) for w in range(1, target+1)]
     legacy_notes, legacy_warning = rivalry_notes(weeks[-1], YEAR)
     legacy_notes = enrich_rivalry_labels(legacy_notes, teams)

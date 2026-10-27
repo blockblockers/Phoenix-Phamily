@@ -14,3 +14,12 @@ The collector cannot independently verify external NFL news. It outputs a checkl
 
 ## Check
 Run `python -m py_compile collector.py` and your existing GitHub weekly workflow. Review the resulting `reports/week-NN.md` and JSON. No credentials are bundled.
+
+## Version 3.2: automatic NFL game-log enrichment
+Upload `nfl_enrichment.py`, the updated `.github/workflows/weekly.yml`, `collector.py`, and `recap_instructions.md`. Keep your existing `legacy/` files and `owner_overrides.json`; no need to re-upload or replace the historical archive.
+
+The weekly workflow runs the collector, then fetches public ESPN NFL final-game box scores for the **fantasy report year and week**. It writes `reports/week-NN-nfl-context.json` and `reports/week-NN-nfl-context.md`, each with player stat categories, source URLs, and game dates. Upload all report files together to the recap author. The NFL step is best effort and does not prevent the main report from being saved if ESPN is unavailable.
+
+This is a source-backed **game-log** enrichment, not automatic news or injury verification. For real injury/transaction narratives, research dated sources separately. ESPN's public endpoints may change; review warnings in the context file. The script was tested with mock data, not authenticated live ESPN.
+
+To run locally after a collection: `python nfl_enrichment.py --latest`

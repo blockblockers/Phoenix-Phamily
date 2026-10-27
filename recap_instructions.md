@@ -19,7 +19,12 @@
 
 ## NFL research and factual discipline
 - Match the exact NFL scoring week and 2026 season; verify NFL game logs and news with dated sources (NFL.com/ESPN/team reports). Cite linked sources for real-life yardage, touchdowns, injuries, snaps, usage, or trades. Do not reuse later-week news as if it happened during the fantasy week.
-- `collector.py` does NOT fetch outside NFL news automatically. Without a separately sourced `nfl_context` input, rely only on ESPN fantasy scoring and projections; don't invent real-world game stats.
+- `nfl_enrichment.py` automatically retrieves ESPN NFL final-game box-score rows for the **same season and week** as the fantasy report and saves `reports/week-NN-nfl-context.json` and `.md`. Use the sourced game logs only when a row and URL are present. This is NOT a verified injury/news feed: do not invent injury, trade, snap-count or usage explanations. If enrichment fails, rely only on fantasy scoring and projections.
 - A high-scoring benched player is NOT automatically a legal replacement: check lineup slot eligibility, lock times, and available starters before claiming a manager 'cost themselves' the win.
 - Never make up quotes, rivalries, playoff odds, real names or events.
 - All 6 matchup outcomes, all scoring bonuses, 12 rankings, exact scores and margins must be checked against JSON.
+
+## Source-backed storytelling
+- Use one or two relevant sourced NFL box-score details per matchup when available, with links to the source; never force every game log into the story.
+- Keep the published article at 1,150–1,250 words **including** headings, tables, rankings and awards; measure word count before publishing.
+- Do not copy ESPN usernames from legacy files or archived names into owner labels.

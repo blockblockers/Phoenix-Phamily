@@ -32,6 +32,9 @@ jobs:
           else
             python collector.py
           fi
+      - name: Enrich with sourced NFL game logs (best effort)
+        continue-on-error: true
+        run: python nfl_enrichment.py --latest
       - uses: actions/upload-artifact@v4
         with:
           name: phoenix-phamily-weekly-report
