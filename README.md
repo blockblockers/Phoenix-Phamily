@@ -1,22 +1,27 @@
-# Phoenix Phamily — ESPN Fantasy Football weekly collector
+# Phoenix Phamily ESPN Recap Collector — v2
 
-Private league ID: **1106154**. Season: **2026**.
+Private ESPN league **1106154**, season **2026**. GitHub Actions runs Tuesday 9:15 a.m. Phoenix time. Does not generate prose via API; creates a research brief for ChatGPT.
 
-## Setup
-1. Create a **private** GitHub repository, e.g. `phoenix-phamily-recap`.
-2. Upload the contents of this starter folder to the root of the repository, including `.github/workflows/weekly.yml`.
-3. In GitHub: **Settings → Secrets and variables → Actions → New repository secret**. Add `ESPN_S2` and `ESPN_SWID` with values obtained locally from your authenticated ESPN browser session. Never share or commit these values.
-4. Go to **Actions → Phoenix Phamily weekly stats → Run workflow**. Optionally specify a **completed** week for testing. Otherwise, the script uses ESPN's current week minus one.
-5. Download the `phoenix-phamily-weekly-report` artifact from the completed workflow run. Unzip and upload the Markdown or JSON report into ChatGPT.
-6. The workflow runs Tuesdays at **9:15 AM America/Phoenix** (Arizona local time).
+## Upgrade from v1
 
-## Notes
-- ESPN's Fantasy API is unofficial. API changes and session expiration can break collection.
-- A private repo and GitHub Secrets protect the credentials from being committed, but session cookies are sensitive and may grant account access. Rotate them if exposed.
-- The collector deliberately refuses incomplete box scores, missing teams, odd team counts, or a bonus-cutoff scoring tie.
-- For weekly bonus wins, the top half by weekly points receives one win. Head-to-head wins are separate. A tie in a head-to-head game is reported but not awarded as a win.
-- The weekly scoring ranking is **not** an editorial power ranking. Power rankings and full-season records require separate calculation or additional data.
-- Starter highlights use the lineup slot field as provided by `espn_api`; review unusual lineup configurations and ESPN corrections.
-- The package dependency is bounded to a major version but not fully pinned; after the first successful test, pin the working version for repeatability.
-- Reports are stored as GitHub Actions artifacts, not committed to the repository. Artifacts expire after the configured retention period.
-- For local use: install `requirements.txt`, set `ESPN_S2` and `ESPN_SWID` in your shell environment, and run `python collector.py --week 7` (replace with a completed week).
+Upload and overwrite `collector.py`, `README.md`, `.github/workflows/weekly.yml`, `requirements.txt`, `.gitignore`; add `owner_overrides.json` and `recap_instructions.md`. Keep the existing GitHub Actions secrets `ESPN_S2` and `ESPN_SWID`. Never paste cookies into GitHub code or ChatGPT.
+
+## Run
+
+GitHub → Actions → **Phoenix Phamily weekly stats** → Run workflow → optional `week` (completed week only). Download artifact `phoenix-phamily-weekly-report`. Upload `week-XX.md` and optionally `week-XX.json` to ChatGPT with `recap_instructions.md`. Ask for NFL news research for that week before drafting.
+
+Local: `pip install -r requirements.txt` then set environment variables `ESPN_S2` and `ESPN_SWID` securely and run `python collector.py --week 6`.
+
+## Owner names
+
+The collector tries ESPN team `owners` / `owner` fields. Some ESPN API/library versions return an ID or no display name. Check the `owners` array in JSON and the owner column in Markdown. For reliable friendly names, populate `owner_overrides.json` with **team IDs** (not team names, which can change), e.g. `{"17": "Preferred owner name"}`. This file is optional and starts as `{}`. Only add names you're comfortable storing in a private repository. If ESPN exposes opaque IDs, replace them with friendly names via overrides.
+
+## Limitations
+
+- The unofficial `espn_api` library may change or fail when ESPN sessions expire.
+- Historical stats are fetched for all weeks 1..target; ESPN corrections may change prior results.
+- Combined wins are H2H + top-half scoring bonus, with H2H ties tracked separately. The script stops on ties at the scoring-bonus cutoff.
+- Season standings are calculated, not necessarily ESPN's official playoff-seeding order. Playoff odds, league tiebreakers and bye weeks require additional rules.
+- Bench points are not proof that a legal lineup swap existed; positional eligibility and lock times aren't evaluated.
+- News and subjective power rankings are **not** automatically fetched or generated. ChatGPT researches verified week-specific news when drafting.
+- Do not publish raw JSON if it contains personal owner names you don't wish to share.
