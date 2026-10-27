@@ -3,6 +3,7 @@
   "league_name": "Stone Christ",
   "espn_league_id": 41607,
   "season": 2026,
+"archive_start_year": 2007,
   "enabled": false,
   "scoring": {
     "top_half_bonus_win": false
