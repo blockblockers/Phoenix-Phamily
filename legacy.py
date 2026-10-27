@@ -39,11 +39,11 @@ def extract_owner_ids(team):
     return sorted(set(ids))
 
 
-def build_archive(league_factory, end_year=2025):
+def build_archive(league_factory, end_year=2025, start_year=START_YEAR):
     identities = read_json(IDENTITIES, {'franchises': {}, 'seasons': {}})
-    archive = {'schema': 1, 'start_year': START_YEAR, 'end_year': end_year,
+    archive = {'schema': 1, 'start_year': start_year, 'end_year': end_year,
                'seasons': [], 'warnings': [], 'identity_policy': 'explicit season+team mapping only'}
-    for year in range(START_YEAR, end_year + 1):
+    for year in range(start_year, end_year + 1):
         try:
             league = league_factory(year)
             season = {'year': year, 'teams': [], 'matchups': [], 'errors': []}

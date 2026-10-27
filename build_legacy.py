@@ -7,14 +7,15 @@ import json
 
 p = argparse.ArgumentParser()
 p.add_argument('--through', type=int, default=2025)
+p.add_argument('--from-year', type=int, default=int(os.getenv('RECAP_ARCHIVE_START_YEAR', '2013')))
 a = p.parse_args()
-if not 2013 <= a.through <= 2025:
-    p.error('--through must be between 2013 and 2025')
+if not 2000 <= a.from_year <= a.through <= int(os.getenv('RECAP_SEASON', '2026')) - 1:
+    p.error('Archive range must be from 2000 through the year before the current season')
 s2, swid = os.getenv('ESPN_S2'), os.getenv('ESPN_SWID')
 if not s2 or not swid:
     p.error('ESPN_S2 and ESPN_SWID environment variables required')
 factory = lambda year: League(league_id=int(os.getenv("RECAP_LEAGUE_ID", "1106154")), year=year, espn_s2=s2, swid=swid)
-archive = build_archive(factory, a.through)
+archive = build_archive(factory, a.through, start_year=a.from_year)
 try:
     current = factory(int(os.getenv("RECAP_SEASON", "2026")))
     archive['current_teams'] = [

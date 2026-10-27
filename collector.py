@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from espn_api.football import League
 from legacy import rivalry_notes
+from team_names import canonical_team_name
 
 LEAGUE_ID = int(os.getenv("RECAP_LEAGUE_ID", "1106154"))
 YEAR = int(os.getenv("RECAP_SEASON", "2026"))
@@ -254,7 +255,12 @@ def main():
         raise SystemExit(f'Week {target} not completed according to ESPN (current week {current})')
     overrides = load_overrides(Path('owner_overrides.json'))
     members = member_directory(league)
-    teams = {int(t.team_id): {'id': int(t.team_id), 'name': t.team_name.strip(),
+    config_path = Path('league.json')
+    config = json.loads(config_path.read_text(encoding='utf-8')) if config_path.exists() else {}
+    recap = config.get('recap', {})
+    aliases = config.get('team_name_aliases', {})
+    personalities = recap.get('team_personalities', {})
+    teams = {int(t.team_id): {'id': int(t.team_id), 'name': canonical_team_name(t.team_name, aliases, personalities),
                               'owner': (clean_human_name(display=overrides.get(int(t.team_id))) if int(t.team_id) in overrides else owner_name(t, members)),
                               'owner_source': 'manual override' if int(t.team_id) in overrides and clean_human_name(display=overrides.get(int(t.team_id))) else 'ESPN verified name' if owner_name(t, members) else 'unavailable'} for t in league.teams}
     weeks = [weekly(league, w, {i: t['name'] for i, t in teams.items()}) for w in range(1, target+1)]

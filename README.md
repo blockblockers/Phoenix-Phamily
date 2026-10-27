@@ -1,4 +1,4 @@
-# Multi-League ESPN Fantasy Recap Engine v4
+# Multi-League ESPN Fantasy Recap Engine v4.1
 
 One GitHub repository, one weekly workflow, independent reports, histories, and personalities per league. This generates **research briefs and sourced NFL game-log context**, not automatically written prose. Paste each league's outputs and league.json into ChatGPT to write the 1,150–1,250 word recap.
 
@@ -31,3 +31,11 @@ One GitHub repository, one weekly workflow, independent reports, histories, and 
 ## Local validation
 `python -m unittest discover -p 'test_*.py'`
 `python run_leagues.py --help`
+
+## v4.1: Team names and new-league archives
+- Current team display names are whitespace/apostrophe normalized and matched to `recap.team_personalities` keys. Explicit `team_name_aliases` fix ESPN spelling/capitalization variants without changing IDs. Historical team names remain as originally recorded for accurate callbacks.
+- `work-league` and `friends-league` are included as **disabled placeholders**. Set real ESPN league IDs (positive integers), `enabled: true`, and each league's `archive_start_year` to its actual inaugural season (or earliest available year).
+- Run **Selected league historical archive** with `league=work-league` (or `friends-league`), `through=2025` for the 2026 season. Download the `selected-league-archives` artifact, copy that league's `archive.json`, `identities.json`, and `identity_review.json` into its `legacy/` directory, and commit. Repeat for the other league.
+- The archive workflow reads the league-specific start year; historical matchups can be incomplete where ESPN box scores are unavailable. Inspect `identity_review.json` before relying on historical franchise matching.
+- Private leagues require the ESPN account represented by the GitHub secrets to have access. If not, that league will fail until appropriate credentials are configured.
+- The archive job does not automatically commit downloaded artifacts to GitHub.

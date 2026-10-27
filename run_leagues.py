@@ -12,10 +12,12 @@ def validate(d):
     if not isinstance(d.get('season'),int): raise ValueError('Invalid season')
     if not isinstance(d.get('scoring',{}).get('top_half_bonus_win'),bool): raise ValueError('Specify boolean top_half_bonus_win')
     if not d.get('league_name'): raise ValueError('Missing league_name')
+    if not isinstance(d.get('archive_start_year',2013),int) or not 2000 <= d.get('archive_start_year',2013) < d['season']: raise ValueError('Invalid archive_start_year')
+    if not isinstance(d.get('team_name_aliases',{}),dict): raise ValueError('team_name_aliases must be a dictionary')
 
 def run_one(folder,d,args):
     validate(d)
-    env=os.environ.copy();env.update(RECAP_LEAGUE_ID=str(d['espn_league_id']),RECAP_SEASON=str(d['season']),RECAP_LEAGUE_NAME=d['league_name'],RECAP_TOP_HALF_BONUS=str(d['scoring']['top_half_bonus_win']).lower())
+    env=os.environ.copy();env.update(RECAP_LEAGUE_ID=str(d['espn_league_id']),RECAP_SEASON=str(d['season']),RECAP_LEAGUE_NAME=d['league_name'],RECAP_TOP_HALF_BONUS=str(d['scoring']['top_half_bonus_win']).lower(),RECAP_ARCHIVE_START_YEAR=str(d.get('archive_start_year',2013)))
     if not env.get('ESPN_S2') or not env.get('ESPN_SWID'): raise RuntimeError('Set ESPN_S2 and ESPN_SWID as GitHub Secrets')
     if args.mode=='weekly':
         cmd=[sys.executable,str(ROOT/'collector.py')]+(['--week',str(args.week)] if args.week else [])
@@ -27,7 +29,7 @@ def run_one(folder,d,args):
         if result.returncode: print('WARNING: NFL enrichment failed for',d['league_name'],file=sys.stderr)
     else:
         through=args.through if args.through else d['season']-1
-        subprocess.run([sys.executable,str(ROOT/'build_legacy.py'),'--through',str(through)],cwd=folder,env=env,check=True)
+        subprocess.run([sys.executable,str(ROOT/'build_legacy.py'),'--through',str(through),'--from-year',str(d.get('archive_start_year',2013))],cwd=folder,env=env,check=True)
         subprocess.run([sys.executable,str(ROOT/'infer_identities.py')],cwd=folder,env=env,check=True)
 
 def main():
