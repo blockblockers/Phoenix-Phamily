@@ -11,18 +11,18 @@
     "target_words": 1200,
     "tone": "Colorful ESPN sportswriter, personalized, witty aggressive team-name trash talk throughout",
     "team_personalities": {
-      "The Boomers": "Older generation: retirement, early-bird specials, flip phones, obsolete technology, bad flatulence, carpet salesman",
-      "The Ladybirds": "Birds of prey, swarms, aerial supremacy, special-needs teacher, yoga instructor",
-      "TD Law Firm Jackson, McConkey": "Courtroom, legal malpractice, billable hours, losing cases, chef, frequent injuries, owns a boat",
-      "Rice and Shine": "Breakfast, rice, waking up late, new grandma",
-      "Cookin in the Kitchen": "Kitchen disasters, recipes, burnt food, pregnant, mom",
-      "Hail Mary": "Miracles, prayers, divine intervention, reno jokes",
-      "CHASIN A DUB": "Chasing an elusive victory, plumber, recent dad, adhd",
-      "KC's McTeam": "McDonald's-style menu, McBeatdowns, great grandma, quilting lifestyle",
-      "Gibbs Me a Break": "Begging for breaks and lucky escapes, IT internal audit, recently engaged, new house, frugal",
-      "Drake It 'Til You Make It": "Fake it till you make it, Drake puns, speech-language pathology assistant, fear or flying, grandma, dog lover",
-      "Risky Business": "Investments, bankruptcy, risky decisions, airport construction, tall, former athlete, beer drinker",
-      "Ceedee's TD's": "Touchdowns and CeeDee puns, recent mom, saleswoman"
+      "The Boomers": "Older generation: retirement, early-bird specials, flip phones, obsolete technology, bad flatulence, carpet salesman, HOA Board Member, Grumpy, Skips leg day, Dad to 'Gibbs Me a Break'",
+      "The Ladybirds": "Birds of prey, swarms, aerial supremacy, special-needs teacher, yoga instructor, ladybugs, Italian, Food-obsessed",
+      "TD Law Firm Jackson, McConkey": "Courtroom, legal malpractice, billable hours, losing cases, chef, frequent injuries, owns a boat, likes beaches",
+      "Rice and Shine": "Breakfast, rice, waking up late, new grandma, mom to 'Ceedee's TD's'",
+      "Cookin in the Kitchen": "Kitchen disasters, recipes, burnt food, pregnant, mom, Puerto rican, new york, twin",
+      "Hail Mary": "Miracles, prayers, divine intervention, Reno jokes, Owned a sailboat",
+      "CHASIN A DUB": "Chasing an elusive victory, plumber, recent dad, ADHD, son to 'Risky Business' and 'Drake it 'Til you Make It', Bass Pro Shop wannabee hat wearer",
+      "KC's McTeam": "McDonald's-style menu, McBeatdowns, great grandma, quilting lifestyle, wife to "the boomer's, mom to 'Gibbs me a Break' and 'Drake it 'Til you Make it'",
+      "Gibbs Me a Break": "Begging for breaks and lucky escapes, IT internal audit, recently engaged, drummer, frugal, son to 'The Boomers' and 'KC's McTeam', Brother to 'Drake it 'Til you Make It'",
+      "Drake It 'Til You Make It": "Fake it till you make it, Drake puns, speech-language pathology assistant, fear of flying, grandma, dog lover, married to 'Risky Business', mom to 'Chasin a dub', sister to 'Gibbs me a Break'",
+      "Risky Business": "Investments, bankruptcy, risky decisions, airport construction, tall, former baseball pitcher and athlete, beer drinker, married to 'Drake it 'Tile you Make it', beginner landscape painter",
+      "Ceedee's TD's": "Touchdowns and CeeDee puns, recent mom, saleswoman, 'Chasin a dub's' baby momma"
     }
   },
   "team_name_aliases": {
